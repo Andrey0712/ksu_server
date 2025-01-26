@@ -64,7 +64,7 @@ namespace WebKsu.Data.Entities
                 {
                     Email = "admin@gmail.com",
                     UserName = "admin@gmail.com",
-                    Name = "Василь",
+                    Owner = "Luda",
                     Phone = "+38098839384",
 
                 };

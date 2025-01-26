@@ -12,6 +12,7 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.AspNetCore.HttpOverrides;
+using WebKsu.Data.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -160,5 +161,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 //app.UseCustomExceptionHandler();
-
+app.SeederData();
 app.Run();
