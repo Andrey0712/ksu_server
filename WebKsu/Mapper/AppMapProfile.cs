@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using System.Globalization;
 using WebKsu.Data.Entities.Identity;
+using WebKsu.Model;
 
 namespace WebKsu.Mapper
 {
@@ -10,30 +11,31 @@ namespace WebKsu.Mapper
         {
             var cultureInfo = new CultureInfo("uk-UA");
 
-            /*CreateMap<RegisterViewModel, AppUser>()
+            CreateMap<RegisterViewModel, AppUser>()
                 .ForMember(x => x.UserName, opt => opt.MapFrom(x => x.Email))
-                .ForMember(x => x.FirstName, opt => opt.MapFrom(opt => opt.FirstName))
-                .ForMember(x => x.SecondName, opt => opt.MapFrom(opt => opt.SecondName))
+                .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
+                .ForMember(x => x.Address, opt => opt.MapFrom(opt => opt.Address))
                 .ForMember(x => x.Email, opt => opt.MapFrom(opt => opt.Email))
                 .ForMember(x => x.Phone, opt => opt.MapFrom(opt => opt.Phone));
+               
 
             //мепер для вівода юзера
             CreateMap<AppUser, UserItemViewModel>()
-                .ForMember(x => x.FirstName, opt => opt.MapFrom(opt => opt.FirstName))
+                .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
                 .ForMember(x => x.Email, opt => opt.MapFrom(opt => opt.Email));
 
 
             CreateMap<UserEditViewModel, AppUser>()
 
                 .ForMember(x => x.UserName, opt => opt.Ignore())
-                .ForMember(x => x.FirstName, opt => opt.MapFrom(opt => opt.FirstName))
-                .ForMember(x => x.SecondName, opt => opt.MapFrom(opt => opt.SecondName))
+                .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
+                .ForMember(x => x.Address, opt => opt.MapFrom(opt => opt.Address))
                 .ForMember(x => x.Email, opt => opt.Ignore())
                 .ForMember(x => x.Phone, opt => opt.MapFrom(opt => opt.Phone));
 
 
             //мепери для категорії
-            CreateMap<CreateCategoryViewModel, CategoryEntity>();
+            /*CreateMap<CreateCategoryViewModel, CategoryEntity>();
             CreateMap<CategoryEntity, CategoryItemViewModel>();
 
             //мепери для продукт
