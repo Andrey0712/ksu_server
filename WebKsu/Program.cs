@@ -11,8 +11,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using Microsoft.Extensions.FileProviders;
-using Microsoft.AspNetCore.HttpOverrides;
 using WebKsu.Data.Entities;
+using WebKsu.Mapper;
+using FluentValidation.AspNetCore;
+using WebKsu.Servise;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,13 +43,13 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Include;
     options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
 });
-//builder.Services.AddAutoMapper(typeof(AppMapProfile));
-//builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
-//var signinKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue<String>("JwtKey")));
+builder.Services.AddAutoMapper(typeof(AppMapProfile));
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+var signinKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue<String>("JwtKey")));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-/*builder.Services.AddAuthentication(options =>
+builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -64,9 +66,9 @@ builder.Services.AddEndpointsApiExplorer();
         ValidateIssuerSigningKey = true,
         ClockSkew = TimeSpan.Zero
     };
-});*/
+});
 
-//builder.Services.AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<Program>());
+builder.Services.AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<Program>());
 
 builder.Services.AddSwaggerGen(c =>
 {
