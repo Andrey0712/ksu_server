@@ -15,6 +15,7 @@ using WebKsu.Data.Entities;
 using WebKsu.Mapper;
 using FluentValidation.AspNetCore;
 using WebKsu.Servise;
+using WebKsu.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -127,7 +128,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 
 
-//app.UseLoggerFile();
+app.UseLoggerFile();
 
 app.UseCors(options =>
                 options.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader());
