@@ -2,11 +2,35 @@
 {
     public class RegisterViewModel
     {
+        /// <summary>
+        /// Емейл користувача
+        /// </summary>
+        /// <example>gg@gg.gg</example>
         public string Email { get; set; }
+        /// <summary>
+        /// ПІБ користувача
+        /// </summary>
+        /// <example>Остапенко Тарас Петрович</example>
         public string Owner { get; set; }
+        /// <summary>
+        /// Адреса користувача
+        /// </summary>
+        /// <example>м.Рівне вул.Корнаухова 15, кв 2</example>
         public string Address { get; set; }
+        /// <summary>
+        /// Телефон користувача
+        /// </summary>
+        /// <example>+38 097 846 2387</example>
         public string Phone { get; set; }
+        /// <summary>
+        /// Пароль користувача
+        /// </summary>
+        /// <example>12345</example>
         public string Password { get; set; }
+        /// <summary>
+        /// Пароль користувача
+        /// </summary>
+        /// <example>12345</example>
         public string ConfirmPassword { get; set; }
     }
 
@@ -47,14 +71,38 @@
 
     public class UserEditViewModel
     {
+        /// <summary>
+        /// id користувача
+        /// </summary>
+        /// <example>15</example>
         public long Id { get; set; }
+        /// <summary>
+        /// ПІБ користувача
+        /// </summary>
+        /// <example>Остапенко Тарас Петрович</example>
         public string Owner { get; set; }
+        /// <summary>
+        /// Емейл користувача
+        /// </summary>
+        /// <example>gg@gg.gg</example>
         public string Email { get; set; }
+        /// <summary>
+        /// Адреса користувача
+        /// </summary>
+        /// <example>м.Рівне вул.Корнаухова 15, кв 2</example>
         public string Address { get; set; }
+        /// <summary>
+        /// Телефон користувача
+        /// </summary>
+        /// <example>+38 097 846 2387</example>
         public string Phone { get; set; }
     }
     public class UserDelViewModel
     {
+        /// <summary>
+        /// id користувача
+        /// </summary>
+        /// <example>15</example>
         public long Id { get; set; }
 
     }

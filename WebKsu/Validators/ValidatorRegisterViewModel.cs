@@ -40,7 +40,9 @@ namespace WebKsu.Validators
 
             RuleFor(x => x.Phone)
                 .NotEmpty().WithMessage("Поле  є обов'язковим!")
-                .MinimumLength(2).WithMessage("Поле має мати міннімум 2 символів!");
+                .Matches(@"^(\+0?38\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$")
+                //.MinimumLength(10)
+                .WithMessage("Поле має мати вигляд +38 097 846 2387");
 
             RuleFor(x => x.ConfirmPassword)
                 .NotEmpty().WithName("ConfirmPassword").WithMessage("Поле є обов'язковим!")
@@ -78,4 +80,43 @@ namespace WebKsu.Validators
         }
 
     }
+
+    public class ValidatorEditViewModel : AbstractValidator<UserEditViewModel>
+    {
+        private readonly UserManager<AppUser> _userManager;
+        public ValidatorEditViewModel(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+            RuleFor(x => x.Email)
+               .NotEmpty().WithMessage("Поле пошта є обов'язковим!")
+               .EmailAddress().WithMessage("Пошта є не коректною!")
+               .DependentRules(() =>
+               {
+                   RuleFor(x => x.Email).Must(BeUniqueEmail)
+
+                    .WithMessage("Дана пошта уже зареєстрована!");
+               });
+            
+            RuleFor(x => x.Owner)
+                .NotEmpty().WithMessage("Поле є обов'язковим!")
+                .MinimumLength(2).WithMessage("Поле має мати міннімум 2 символів!");
+
+            RuleFor(x => x.Address)
+                .NotEmpty().WithMessage("Поле є обов'язковим!")
+                .MinimumLength(3).WithMessage("Поле має мати міннімум 3 символів!");
+
+            RuleFor(x => x.Phone)
+                .NotEmpty().WithMessage("Поле  є обов'язковим!")
+                .Matches(@"^(\+0?38\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$")
+                //.MinimumLength(10)
+                .WithMessage("Поле має мати вигляд +38 097 846 2387");
+
+           
+        }
+        private bool BeUniqueEmail(string email)
+        {
+            return _userManager.FindByEmailAsync(email).Result == null;
+        }
+    }
+
 }
