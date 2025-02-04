@@ -71,11 +71,11 @@
 
     public class UserEditViewModel
     {
-        /// <summary>
+       /* /// <summary>
         /// id користувача
         /// </summary>
         /// <example>15</example>
-        public long Id { get; set; }
+        public long Id { get; set; }*/
         /// <summary>
         /// ПІБ користувача
         /// </summary>

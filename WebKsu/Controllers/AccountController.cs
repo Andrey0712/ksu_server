@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,7 @@ namespace WebKsu.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class AccountController : ControllerBase
     {
         private readonly IMapper _mapper;
@@ -84,12 +86,12 @@ namespace WebKsu.Controllers
         /// <response code="500">Oops! Can't get  users list right now</response>
 
         [HttpGet]
-        //[Authorize]
         [Route("users")]
         public async Task<IActionResult> Users()
         {
-            Thread.Sleep(2000);
-            var list = await _context.Users.Select(x => _mapper.Map<UserItemViewModel>(x))
+            //Thread.Sleep(2000);
+            var list = await _context.Users
+                .Select(x => _mapper.Map<UserItemViewModel>(x))
                 .AsQueryable().ToListAsync();
 
             return Ok(list);
@@ -135,7 +137,7 @@ namespace WebKsu.Controllers
         /// <response code="500">Oops! Can't delete user now</response>
 
         [HttpPost]
-        //[Authorize]
+        [Authorize]
         [Route("delete")]
 
         public IActionResult Delete([FromBody] int id)
@@ -163,40 +165,55 @@ namespace WebKsu.Controllers
         /// <response code="500">Oops! Can't edit user now</response>
         /// 
 
+         [Authorize(Roles = Roles.User)]
         //[Authorize]
         [HttpPost]
         [Route("edit")]
-        public IActionResult EditUser([FromForm] UserEditViewModel model)
+        public async Task<IActionResult> EditUser([FromForm] UserEditViewModel model)
+
         {
-            var res = _context.Users.FirstOrDefault(x => x.Id == model.Id);
-
-            if (model == null)
+            try
             {
-                return BadRequest(new { message = "Не зашла инфа" });
-            }
-            if (model.Email != null)
-            {
-                res.Email = model.Email;
-            }
-            if (model.Phone != null)
-            {
-                res.Phone = model.Phone;
-            }
+                string userName = User.Claims.FirstOrDefault().Value;
+                var res = await _userManager.FindByNameAsync(userName);
+                //var res = _context.Users.FirstOrDefault(x => x.Id == model.Id);
 
-            if (model.Owner != null)
-            {
-                res.Owner = model.Owner;
+                if (model == null)
+                {
+                    return BadRequest(new { message = "Не зашла инфа" });
+                }
+                if (model.Email != null)
+                {
+                    res.Email = model.Email;
+                    res.UserName = model.Email;
+                }
+                if (model.Phone != null)
+                {
+                    res.Phone = model.Phone;
+                }
+
+                if (model.Owner != null)
+                {
+                    res.Owner = model.Owner;
+                }
+
+                if (model.Address != null)
+                {
+                    res.Address = model.Address;
+                }
+
+                _context.SaveChanges();
+
+                return Ok(new TokenResponceViewModel { token = _jwtTokenService.CreateToken(res) });
             }
-
-            if (model.Address != null)
+            catch (Exception ex)
             {
-                res.Address = model.Address;
+                return BadRequest(new
+                {
+                    invalid = ex.Message
+                });
             }
-
-            _context.SaveChanges();
-
-            return Ok(new TokenResponceViewModel { token = _jwtTokenService.CreateToken(res) });
         }
-
+       
     }
 }

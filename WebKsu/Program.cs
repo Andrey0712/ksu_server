@@ -16,6 +16,7 @@ using WebKsu.Mapper;
 using FluentValidation.AspNetCore;
 using WebKsu.Servise;
 using WebKsu.Helpers;
+using WebKsu.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +47,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 });
 builder.Services.AddAutoMapper(typeof(AppMapProfile));
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+
 var signinKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue<String>("JwtKey")));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -163,6 +165,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-//app.UseCustomExceptionHandler();
+app.UseCustomExceptionHandler();
 app.SeederData();
 app.Run();

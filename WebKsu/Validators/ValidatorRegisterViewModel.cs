@@ -62,22 +62,22 @@ namespace WebKsu.Validators
             _userManager = userManager;
             RuleFor(x => x.Email)
                .NotEmpty().WithMessage("Поле пошта є обов'язковим!")
-               .EmailAddress().WithMessage("Пошта є не коректною!")
-               .DependentRules(() =>
+               .EmailAddress().WithMessage("Пошта є не коректною!");
+              /* .DependentRules(() =>
                {
                    RuleFor(x => x.Email).Must(AvailableEmail)
 
                     .WithMessage("Дана пошта уже зареєстрована!");
-               });
+               });*/
             RuleFor(x => x.Password)
                 .NotEmpty().WithName("Password").WithMessage("Поле пароль є обов'язковим!")
                 .MinimumLength(5).WithName("Password").WithMessage("Поле пароль має містити міннімум 5 символів!");
         }
 
-        private bool AvailableEmail(string email)
+       /* private bool AvailableEmail(string email)
         {
             return _userManager.FindByEmailAsync(email).Result != null;
-        }
+        }*/
 
     }
 
@@ -89,13 +89,13 @@ namespace WebKsu.Validators
             _userManager = userManager;
             RuleFor(x => x.Email)
                .NotEmpty().WithMessage("Поле пошта є обов'язковим!")
-               .EmailAddress().WithMessage("Пошта є не коректною!")
-               .DependentRules(() =>
+               .EmailAddress().WithMessage("Пошта є не коректною!");
+               /*.DependentRules(() =>
                {
                    RuleFor(x => x.Email).Must(BeUniqueEmail)
 
                     .WithMessage("Дана пошта уже зареєстрована!");
-               });
+               });*/
             
             RuleFor(x => x.Owner)
                 .NotEmpty().WithMessage("Поле є обов'язковим!")
@@ -113,10 +113,10 @@ namespace WebKsu.Validators
 
            
         }
-        private bool BeUniqueEmail(string email)
+       /* private bool BeUniqueEmail(string email)
         {
             return _userManager.FindByEmailAsync(email).Result == null;
-        }
+        }*/
     }
 
 }
