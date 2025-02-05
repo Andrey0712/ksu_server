@@ -71,11 +71,11 @@
 
     public class UserEditViewModel
     {
-       /* /// <summary>
+        /// <summary>
         /// id користувача
         /// </summary>
         /// <example>15</example>
-        public long Id { get; set; }*/
+        public long Id { get; set; }
         /// <summary>
         /// ПІБ користувача
         /// </summary>
@@ -97,6 +97,8 @@
         /// <example>+38 097 846 2387</example>
         public string Phone { get; set; }
     }
+
+   
     public class UserDelViewModel
     {
         /// <summary>

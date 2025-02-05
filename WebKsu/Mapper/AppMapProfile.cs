@@ -27,11 +27,14 @@ namespace WebKsu.Mapper
 
             CreateMap<UserEditViewModel, AppUser>()
 
-                .ForMember(x => x.UserName, opt => opt.Ignore())
+                .ForMember(x => x.UserName, opt => opt.MapFrom(x => x.Email))
+                .ForMember(x=>x.Id, opt => opt.Ignore())
                 .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
                 .ForMember(x => x.Address, opt => opt.MapFrom(opt => opt.Address))
-                .ForMember(x => x.Email, opt => opt.Ignore())
+                .ForMember(x => x.Email, opt => opt.MapFrom(opt => opt.Email))
                 .ForMember(x => x.Phone, opt => opt.MapFrom(opt => opt.Phone));
+
+          
 
 
             //мепери для категорії

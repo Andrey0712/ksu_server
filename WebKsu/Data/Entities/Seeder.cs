@@ -66,6 +66,7 @@ namespace WebKsu.Data.Entities
                     UserName = "admin@gmail.com",
                     Owner = "Luda",
                     Phone = "+38098839384",
+                    Address= "м.Рівне вул.Корнаухова 15, кв 2"
 
                 };
                 var result = userManeger.CreateAsync(user, "qwerty1").Result;

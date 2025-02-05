@@ -14,7 +14,7 @@ namespace WebKsu.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    
+
     public class AccountController : ControllerBase
     {
         private readonly IMapper _mapper;
@@ -137,12 +137,12 @@ namespace WebKsu.Controllers
         /// <response code="500">Oops! Can't delete user now</response>
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = Roles.Admin)]
         [Route("delete")]
 
         public IActionResult Delete([FromBody] int id)
         {
-
+            
             var res = _context.Users.FirstOrDefault(x => x.Id == id);
             if (res == null)
             {
@@ -165,7 +165,7 @@ namespace WebKsu.Controllers
         /// <response code="500">Oops! Can't edit user now</response>
         /// 
 
-         [Authorize(Roles = Roles.User)]
+        [Authorize(Roles = Roles.User)]
         //[Authorize]
         [HttpPost]
         [Route("edit")]
@@ -214,6 +214,65 @@ namespace WebKsu.Controllers
                 });
             }
         }
-       
+
+        /// <summary>
+        /// Редагування юзера адміном
+        /// </summary>
+        /// <param name="model">Понель із даними</param>
+        /// <returns>Повертає токен авторизації</returns>
+        /// <remarks>Awesomeness!</remarks>
+        /// <response code="200">Edit user</response>
+        /// <response code="400">Edit user has missing/invalid values</response>
+        /// <response code="500">Oops! Can't edit user now</response>
+        /// 
+        [Authorize(Roles = Roles.Admin)]
+        //[Authorize]
+        [HttpPost]
+        [Route("editUserAdmin")]
+        public async Task<IActionResult> EditUserAdmin([FromForm] UserEditViewModel model)
+
+        {
+            try
+            {
+               
+                var res = _context.Users.FirstOrDefault(x => x.Id == model.Id);
+
+                if (model == null)
+                {
+                    return BadRequest(new { message = "Не зашла инфа" });
+                }
+                if (model.Email != null)
+                {
+                    res.Email = model.Email;
+                    res.UserName = model.Email;
+                }
+                if (model.Phone != null)
+                {
+                    res.Phone = model.Phone;
+                }
+
+                if (model.Owner != null)
+                {
+                    res.Owner = model.Owner;
+                }
+
+                if (model.Address != null)
+                {
+                    res.Address = model.Address;
+                }
+
+                _context.SaveChanges();
+
+                return Ok(new TokenResponceViewModel { token = _jwtTokenService.CreateToken(res) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    invalid = ex.Message
+                });
+            }
+        }
+
     }
 }
