@@ -229,7 +229,7 @@ namespace WebKsu.Controllers
         //[Authorize]
         [HttpPost]
         [Route("editUserAdmin")]
-        public async Task<IActionResult> EditUserAdmin([FromForm] UserEditViewModel model)
+        public IActionResult EditUserAdmin([FromForm] UserEditViewModel model)
 
         {
             try

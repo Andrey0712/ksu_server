@@ -67,3 +67,72 @@ ORDER BY \"MigrationId\";" (0723d8ff)
 2025-02-06T17:32:44.6871988+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
 2025-02-06T17:32:44.6872863+02:00  [INF] Hosting environment: "Development" (c3307c92)
 2025-02-06T17:32:44.6882770+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-02-06T18:16:44.0535558+02:00  [INF] Seeding Databases (1466a039)
+2025-02-06T18:16:46.1012837+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-02-06T18:16:47.1224473+02:00  [INF] Executed DbCommand ("214"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-02-06T18:16:47.2676376+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-02-06T18:16:47.3098480+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-02-06T18:16:47.3536977+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-06T18:16:47.8450819+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-02-06T18:16:47.8718821+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-02-06T18:16:48.2414865+02:00  [INF] Now listening on: "http://localhost:5263" (d826f4b8)
+2025-02-06T18:16:48.2417189+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-06T18:16:48.2418100+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-02-06T18:16:48.2418621+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-02-06T19:17:11.0529487+02:00  [INF] Seeding Databases (1466a039)
+2025-02-06T19:17:13.0179723+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-02-06T19:17:14.0571499+02:00  [INF] Executed DbCommand ("145"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-02-06T19:17:14.2520486+02:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-02-06T19:17:14.2927693+02:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-02-06T19:17:14.3310421+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-06T19:17:14.9617893+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-02-06T19:17:14.9879140+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-02-06T19:17:15.2846219+02:00  [INF] Now listening on: "http://localhost:5263" (d826f4b8)
+2025-02-06T19:17:15.2848415+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-06T19:17:15.2849437+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-02-06T19:17:15.2853881+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-02-06T19:20:38.1570239+02:00  [INF] Seeding Databases (1466a039)
+2025-02-06T19:20:40.8440704+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-02-06T19:20:41.8602337+02:00  [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-02-06T19:20:41.9894245+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-02-06T19:20:42.0463879+02:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-02-06T19:20:42.1002977+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-06T19:20:42.6417580+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-02-06T19:20:42.6687211+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-02-06T19:20:42.8818330+02:00  [INF] Now listening on: "http://localhost:5263" (d826f4b8)
+2025-02-06T19:20:42.8823933+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-06T19:20:42.8825122+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-02-06T19:20:42.8825836+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
