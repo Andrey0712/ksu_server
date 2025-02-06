@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WebKsu.Data.Entities;
 using WebKsu.Data.Entities.Identity;
 
 namespace WebKsu.Data
@@ -13,6 +14,7 @@ namespace WebKsu.Data
            base(options)
         {
         }
+        public DbSet<BanerEntity> Baner { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
