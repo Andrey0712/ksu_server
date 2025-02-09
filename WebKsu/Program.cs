@@ -71,6 +71,13 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+
+
+
+
+
+
+
 builder.Services.AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<Program>());
 
 builder.Services.AddSwaggerGen(c =>
@@ -100,7 +107,25 @@ builder.Services.AddSwaggerGen(c =>
 
 //builder.Services.AddSwaggerGen();
 
+
+//builder.Services.AddCors();
+
+/*builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowOrigins",
+    builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});*/
+
+
 var app = builder.Build();
+//app.UseCors("AllowOrigins");
+
+
 
 // Configure the HTTP request pipeline.
 /*if (app.Environment.IsDevelopment())
@@ -120,8 +145,6 @@ app.UseAuthorization();
 
 app.MapControllers();*/
 
-builder.Services.AddCors();
-
 
 
 app.UseForwardedHeaders(new ForwardedHeadersOptions
@@ -132,20 +155,22 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseLoggerFile();
 
-app.UseCors(options =>
-                options.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader());
+app.UseCors(options =>options.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader());
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
+ //Configure the HTTP request pipeline.
+/*if (app.Environment.IsDevelopment())
+{*/
 
 app.UseSwagger();
+  
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebKsu v1");
     c.DisplayRequestDuration();
 });
-//}
+/*}
+  app.UseRouting();*/
+    
 
 var dir = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
 if (!Directory.Exists(dir))

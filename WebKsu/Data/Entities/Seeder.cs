@@ -21,6 +21,7 @@ namespace WebKsu.Data.Entities
                     context.Database.Migrate();
 
                     SeedRole(services);//сидим роли
+                    SeedBaner(services);
                    /* SeedCateory(services);
                     SeedInventoryStatus(services);
                     SeedProduct(services);
@@ -157,53 +158,36 @@ namespace WebKsu.Data.Entities
 
         }*/
 
-        
 
 
-        /*private static void SeedProduct(IServiceProvider service)
+
+        private static void SeedBaner(IServiceProvider service)
         {
 
             var context = service.GetRequiredService<AppEFContext>();
 
-            if (!context.Products.Any())
+            if (!context.Baner.Any())
             {
-                var productCategory = context.Categories.FirstOrDefault();
-                var productInventoryStatus = context.InventoryStatus.FirstOrDefault();
-
-                ProductEntity product = new ProductEntity
+                
+                BanerEntity product = new BanerEntity
                 {
-                    CategoryId = productCategory.Id,
-                    InventoryStatusId = productInventoryStatus.Id,
+                   
                     Name = "Royal Canin",
                     Description = "Корм для дорослих собак середніх порід (чия доросла вага становить від 11 до 25 кг) у віці від 12 місяців до 7 років",
                     //DateCreate = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc),
-                    Price = 500,
-                    StartPhoto = "1xxn0a2u.a1p.jpg",
-                    //InventoryStatus= "У наявності",
-                    Rating = 3
-                    *//*ProductImages = new List<ProductImage>
-                     {
-
-                         new ProductImage
-                         {
-                             ProductId= 1,
-                             Name ="https://zoolove.com.ua/components/com_jshopping/files/img_products/full_royal_canin_medium_adult_sostav_4_kg_zoolove_com_ua.jpg"
-                         },
-                         new ProductImage
-                         {
-                             ProductId=1,
-                             Name="https://images.paws.com/image/upload/b_rgb:FFFFFF,c_pad,dpr_3.0,f_auto,h_400,q_auto,w_400/c_pad,h_400,w_400/v1/product/I0045443_en_06?pgw=1"
-                         }
-                     }*//*
+                    
+                   
+                    StartPhoto = "https://zoolove.com.ua/components/com_jshopping/files/img_products/full_royal_canin_medium_adult_sostav_4_kg_zoolove_com_ua.jpg"
+                         
 
                 };
 
-                context.Products.Add(product);
+                context.Baner.Add(product);
 
                 context.SaveChanges();
 
             }
 
-        }*/
+        }
     }
 }

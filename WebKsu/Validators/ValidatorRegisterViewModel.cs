@@ -62,13 +62,13 @@ namespace WebKsu.Validators
             _userManager = userManager;
             RuleFor(x => x.Email)
                .NotEmpty().WithMessage("Поле пошта є обов'язковим!")
-               .EmailAddress().WithMessage("Пошта є не коректною!")
-               .DependentRules(() =>
+               .EmailAddress().WithMessage("Пошта є не коректною!");
+              /* .DependentRules(() =>
                {
                    RuleFor(x => x.Email).Must(AvailableEmail)
 
                     .WithMessage("Дана пошта уже зареєстрована!");
-               });
+               });*/
             RuleFor(x => x.Password)
                 .NotEmpty().WithName("Password").WithMessage("Поле пароль є обов'язковим!")
                 .MinimumLength(5).WithName("Password").WithMessage("Поле пароль має містити міннімум 5 символів!");

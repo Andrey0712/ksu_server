@@ -42,13 +42,13 @@ namespace WebKsu.Model
             public int Id { get; set; }
             public string Name { get; set; }
             public string Description { get; set; }
-            public string StartPhoto { get; set; }
+            public string? StartPhoto { get; set; }
             public string DateCreate { get; set; }
            
         }
         
         /// <summary>
-        /// Модель для зміни товару
+        /// Модель для зміни 
         /// </summary>
         public class BanerToEdit
         {
