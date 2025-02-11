@@ -47,7 +47,7 @@ namespace WebKsu.Mapper
             CreateMap<BanerAddViewModel, BanerEntity>()
                 //.ForMember(x => x.ProductImages, opt => opt.Ignore())
                 .ForMember(x => x.DateCreated, opt => opt.MapFrom(x =>
-                    DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Utc)))
+                    DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc)))
 
                .ForMember(x => x.StartPhoto, opt => opt.Ignore())
                .ForMember(x => x.Name, opt => opt.MapFrom(opt => opt.Name))

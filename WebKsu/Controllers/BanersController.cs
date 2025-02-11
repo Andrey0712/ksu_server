@@ -1,37 +1,31 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
-using System.Globalization;
-using WebKsu.Data;
 using static WebKsu.Model.BanerViewModel;
+using System.Globalization;
 using WebKsu.Data.Entities;
+using WebKsu.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace WebKsu.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
-    public class BanerForecastController : ControllerBase
+    public class BanersController : ControllerBase
     {
-       /* private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };*/
-
-        private readonly ILogger<BanerForecastController> _logger;
+        private readonly ILogger<BanersController> _logger;
         private readonly IMapper _mapper;
         private readonly AppEFContext _context;
-        private IHostEnvironment _host;
 
-        public BanerForecastController(ILogger<BanerForecastController> logger, IMapper mapper, AppEFContext context, IHostEnvironment host)
+        public BanersController(ILogger<BanersController> logger, IMapper mapper, AppEFContext context)
         {
             _logger = logger;
             _mapper = mapper;
             _context = context;
-            _host = host;
         }
 
-       // [HttpGet(Name = "GetWeatherForecast")]
+        // [HttpGet(Name = "GetWeatherForecast")]
 
         /// <summary>
         /// Реквізіти
@@ -134,14 +128,7 @@ namespace WebKsu.Controllers
             {
                 return BadRequest(new { message = "Check id!" });
             }
-            var oldImage = res.StartPhoto;
-            string fol = "\\uploads\\";
-            string contentRootPath = _host.ContentRootPath + fol + oldImage;
 
-            if (System.IO.File.Exists(contentRootPath))
-            {
-                System.IO.File.Delete(contentRootPath);
-            }
             _context.Baner.Remove(res);
             _context.SaveChanges();
             return Ok(new { message = "Product deleted" });
@@ -237,9 +224,7 @@ namespace WebKsu.Controllers
                 }
 
                 if (model.StartPhoto != null)
-                { 
-                    var oldImage = itemProd.StartPhoto;
-
+                {
                     string randomFilename = Path.GetRandomFileName() +
                         Path.GetExtension(model.StartPhoto.FileName);
 
@@ -248,18 +233,10 @@ namespace WebKsu.Controllers
                     {
                         model.StartPhoto.CopyTo(file);
                     }
-                                       
-                                        string fol = "\\uploads\\";
-                                        string contentRootPath = _host.ContentRootPath + fol + oldImage;
-
-                                        if (System.IO.File.Exists(contentRootPath))
-                                        {
-                                            System.IO.File.Delete(contentRootPath);
-                                        }
                     itemProd.StartPhoto = randomFilename;
                 }
 
-                /* //âèäàëÿºìî ñòîð³ ôîòêè
+                /* //видаляємо сторі фотки
                  if (model.deletedImages != null)
                  {
                      foreach (var delProduct in model.deletedImages)
@@ -273,7 +250,7 @@ namespace WebKsu.Controllers
                          _context.ProductImages.Remove(delProductImage);
                      }
                  }
-                 //Äîäàòè íîâ³ ôîòêè
+                 //Додати нові фотки
                  if (model.Images != null)
                  {
                      foreach (var newImages in model.Images)
@@ -303,8 +280,6 @@ namespace WebKsu.Controllers
 
         }
 
-
-
         /* public IEnumerable<WeatherForecast> Get()
          {
              return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -317,3 +292,4 @@ namespace WebKsu.Controllers
          }*/
     }
 }
+
