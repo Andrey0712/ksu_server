@@ -6,18 +6,17 @@ using WebKsu.Data;
 using static WebKsu.Model.BanerViewModel;
 using WebKsu.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using WebKsu.Constants;
 
 namespace WebKsu.Controllers
 {
+    [Authorize(Roles =Roles.Admin)]
     [ApiController]
     [Route("[controller]")]
     public class BanerForecastController : ControllerBase
     {
-       /* private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };*/
-
+      
         private readonly ILogger<BanerForecastController> _logger;
         private readonly IMapper _mapper;
         private readonly AppEFContext _context;
@@ -183,16 +182,7 @@ namespace WebKsu.Controllers
                 _context.Baner.Add(product);
                 await _context.SaveChangesAsync();
 
-                /*foreach (var img in fileNames)
-                {
-                    ProductImageEntity productImage = new ProductImageEntity()
-                    {
-                        Name = img,
-                        ProductId = product.Id
-                    };
-                    _context.ProductImages.Add(productImage);
-                    _context.SaveChanges();
-                }*/
+               
                 return Ok();
             }
             catch (Exception ex)
@@ -259,61 +249,18 @@ namespace WebKsu.Controllers
                     itemProd.StartPhoto = randomFilename;
                 }
 
-                /* //âèäàëÿºìî ñòîð³ ôîòêè
-                 if (model.deletedImages != null)
-                 {
-                     foreach (var delProduct in model.deletedImages)
-                     {
-                         var delProductImage = itemProd.ProductImages.SingleOrDefault(x => delProduct.Contains(x.Name));
-                         string imgPath = Path.Combine(dirPath, delProductImage.Name);
-                         if (System.IO.File.Exists(imgPath))
-                         {
-                             System.IO.File.Delete(imgPath);
-                         }
-                         _context.ProductImages.Remove(delProductImage);
-                     }
-                 }
-                 //Äîäàòè íîâ³ ôîòêè
-                 if (model.Images != null)
-                 {
-                     foreach (var newImages in model.Images)
-                     {
-                         string ext = Path.GetExtension(newImages.FileName);
-                         string fileName = Path.GetRandomFileName() + ext;
-
-                         string filePath = Path.Combine(dirPath, fileName);
-                         using (var stream = System.IO.File.Create(filePath))
-                         {
-                             newImages.CopyTo(stream);
-                         }
-
-                         _context.ProductImages.Add(new Data.Entities.ProductImageEntity
-                         {
-                             Name = fileName,
-                             ProductId = itemProd.Id
-                         });
-                     }
-                 }*/
+              
 
                 _context.SaveChanges();
 
             }
-            //return Ok(model);
+           
             return Ok(new { message = "ok edit" });
 
         }
 
 
 
-        /* public IEnumerable<WeatherForecast> Get()
-         {
-             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-             {
-                 Date = DateTime.Now.AddDays(index),
-                 TemperatureC = Random.Shared.Next(-20, 55),
-                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-             })
-             .ToArray();
-         }*/
+       
     }
 }

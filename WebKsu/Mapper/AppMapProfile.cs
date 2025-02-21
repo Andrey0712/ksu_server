@@ -37,7 +37,8 @@ namespace WebKsu.Mapper
                 .ForMember(x => x.Phone, opt => opt.MapFrom(opt => opt.Phone));
 
 
-
+            CreateMap<AppUser, ProfileViewModel>();
+                
 
             //мепери для категорії
             /* CreateMap<CreateCategoryViewModel, CategoryEntity>();

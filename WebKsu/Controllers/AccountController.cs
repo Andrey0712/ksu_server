@@ -215,6 +215,29 @@ namespace WebKsu.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("profile")]
+        [Authorize]
+        public async Task<IActionResult> UserProfile()
+        {
+            try
+            {
+                //Thread.Sleep(2000);
+                string userName = User.Claims.FirstOrDefault().Value;
+                var user = await _userManager.FindByNameAsync(userName);
+                var model = _mapper.Map<ProfileViewModel>(user);
+
+                return Ok(model);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new
+                {
+                    invalid = ex.Message
+                });
+            }
+        }
+
         /// <summary>
         /// Редагування юзера адміном
         /// </summary>
