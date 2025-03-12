@@ -15,6 +15,7 @@ namespace WebKsu.Data
         {
         }
         public DbSet<BanerEntity> Baner { get; set; }
+        public DbSet<RunLineEntity> RunLine { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

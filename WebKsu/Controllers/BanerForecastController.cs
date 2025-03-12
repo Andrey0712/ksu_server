@@ -11,7 +11,7 @@ using WebKsu.Constants;
 
 namespace WebKsu.Controllers
 {
-    [Authorize(Roles =Roles.Admin)]
+   
     [ApiController]
     [Route("[controller]")]
     public class BanerForecastController : ControllerBase
@@ -123,6 +123,7 @@ namespace WebKsu.Controllers
 
         [HttpPost]
         [Route("deleteBaner")]
+        [Authorize(Roles = Roles.Admin)]
         //public IActionResult Delete([FromBody] ProductItemViewModel model)
         public IActionResult Delete([FromBody] int id)
 
@@ -158,6 +159,7 @@ namespace WebKsu.Controllers
 
         [HttpPost]
         [Route("addBaner")]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> Add([FromForm] BanerAddViewModel model)
         {
             try
@@ -206,6 +208,7 @@ namespace WebKsu.Controllers
 
         [HttpPost]
         [Route("editBaner")]
+        [Authorize(Roles = Roles.Admin)]
         public IActionResult Edit([FromForm] BanerToEdit model)
         {
 
