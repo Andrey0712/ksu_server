@@ -31,5 +31,18 @@ namespace WebKsu.Model
 
 
         }
+        /// <summary>
+        /// Модель для зміни 
+        /// </summary>
+        public class RunLineToEdit
+        {
+            [Display(Name = "Id")]
+            public int Id { get; set; }
+            
+            [Display(Name = "Опис товару")]
+            public string Description { get; set; }
+            
+
+        }
     }
 }

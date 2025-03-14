@@ -93,7 +93,7 @@ namespace WebKsu.Controllers
         }
 
         /// <summary>
-        /// Додати банер
+        /// Додати Runlines
         /// </summary>
         /// <param name="model">Понель із даними</param>
         /// <returns>Повертає ok</returns>
@@ -129,6 +129,46 @@ namespace WebKsu.Controllers
             }
         }
 
-       
+
+        /// <summary>
+        /// Редагування Runlines
+        /// </summary>
+        /// <param name="model">Понель із даними</param>
+        /// <returns>Повертає message</returns>
+        /// <remarks>Awesomeness!</remarks>
+        /// <response code="200">Edit Runlines</response>
+        /// <response code="400">Edit Runlines has missing/invalid values</response>
+        /// <response code="500">Oops! Can't edit Runlines now</response>
+
+        [HttpPost]
+        [Route("editRunLine")]
+        [Authorize(Roles = Roles.Admin)]
+        public IActionResult Edit([FromForm] RunLineToEdit model)
+        {
+
+
+            if (ModelState.IsValid)
+            {
+                var itemProd = _context.RunLine
+                             .FirstOrDefault(x => x.Id == model.Id);
+                
+                itemProd.Id = model.Id;
+               
+                if (model.Description != null)
+                {
+                    itemProd.Description = model.Description;
+                }
+                                
+                _context.SaveChanges();
+                            }
+
+            return Ok(new { message = "ok edit" });
+
+        }
+
+
+
+
     }
 }
+

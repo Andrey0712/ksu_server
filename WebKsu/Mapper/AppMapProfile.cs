@@ -58,7 +58,7 @@ namespace WebKsu.Mapper
 
             CreateMap<BanerEntity, BanerItemViewModel>()
 
-                 .ForMember(x => x.Image, opt => opt.MapFrom(x => $"/uploads/{x.StartPhoto}"));
+                 .ForMember(x => x.Image, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto}"));
 
             //мепери для runline
             CreateMap<RunLineAddViewModel, RunLineEntity>()
