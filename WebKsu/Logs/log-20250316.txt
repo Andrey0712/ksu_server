@@ -1,0 +1,602 @@
+2025-03-16T12:48:21.9018106+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T12:48:29.5208109+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T12:48:31.2821765+02:00  [INF] Executed DbCommand ("311"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T12:48:31.4645741+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T12:48:31.5004767+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T12:48:31.5758005+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T12:48:32.3515658+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T12:48:32.3766857+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T12:48:32.3968143+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T12:48:32.4165604+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T12:48:32.9852738+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T12:48:32.9854682+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T12:48:32.9855383+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T12:48:32.9856063+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T12:57:46.4800219+02:00 0HNB4F0D49N20:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T12:57:47.0999983+02:00 0HNB4F0D49N20:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T13:03:02.8481637+02:00 0HNB4F0D49N21:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:03:03.0045609+02:00 0HNB4F0D49N21:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T13:09:27.6477639+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T13:09:32.5359783+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:09:33.9074636+02:00  [INF] Executed DbCommand ("263"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T13:09:34.0496121+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T13:09:34.1077113+02:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T13:09:34.2227631+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T13:09:35.0241852+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T13:09:35.0494082+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T13:09:35.0727350+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T13:09:35.0940350+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T13:09:35.4976437+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T13:09:35.4978361+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T13:09:35.4979122+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T13:09:35.4980033+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T13:09:55.5306051+02:00 0HNB4FC4K1COL:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:09:55.8081185+02:00 0HNB4FC4K1COL:00000002 [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T13:10:26.2124712+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T13:10:28.8348980+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:10:29.7669081+02:00  [INF] Executed DbCommand ("136"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T13:10:29.9066194+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T13:10:29.9440114+02:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T13:10:29.9804670+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T13:10:30.4641847+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T13:10:30.4898015+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T13:10:30.5098105+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T13:10:30.5298626+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T13:10:30.6858137+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T13:10:30.6859982+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T13:10:30.6860802+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T13:10:30.6884905+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T13:10:43.7251259+02:00 0HNB4FCL2KRI7:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:10:43.9285850+02:00 0HNB4FCL2KRI7:00000002 [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T13:12:28.0979294+02:00 0HNB4FCL2KRI8:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:12:28.1285558+02:00 0HNB4FCL2KRI8:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T13:12:32.4135240+02:00 0HNB4FCL2KRI9:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:12:32.4596825+02:00 0HNB4FCL2KRI9:00000002 [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T13:31:24.7629238+02:00 0HNB4FCL2KRIA:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:31:24.9515815+02:00 0HNB4FCL2KRIA:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T13:32:46.3368180+02:00 0HNB4FCL2KRIB:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:32:46.3572819+02:00 0HNB4FCL2KRIB:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T13:42:40.8575878+02:00 0HNB4FCL2KRIC:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T13:42:41.0158484+02:00 0HNB4FCL2KRIC:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:09:13.0477570+02:00 0HNB4FCL2KRID:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:09:13.3114205+02:00 0HNB4FCL2KRID:00000003 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:09:24.9870029+02:00 0HNB4FCL2KRIE:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:09:25.0070836+02:00 0HNB4FCL2KRIE:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:09:55.5228335+02:00 0HNB4FCL2KRIF:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:09:55.5433949+02:00 0HNB4FCL2KRIF:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:11:01.3183410+02:00 0HNB4FCL2KRIG:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:11:01.3393021+02:00 0HNB4FCL2KRIG:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:13:33.6024219+02:00 0HNB4FCL2KRIH:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:13:33.6345542+02:00 0HNB4FCL2KRIH:00000003 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:14:35.8906850+02:00 0HNB4FCL2KRII:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:14:36.0209937+02:00 0HNB4FCL2KRII:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:16:15.8596846+02:00 0HNB4FCL2KRIJ:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:16:15.8803059+02:00 0HNB4FCL2KRIJ:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:16:45.1797387+02:00 0HNB4FCL2KRIK:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:16:45.2764433+02:00 0HNB4FCL2KRIK:00000003 [INF] Executed DbCommand ("96"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:17:06.4186571+02:00 0HNB4FCL2KRIL:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:17:06.4503755+02:00 0HNB4FCL2KRIL:00000003 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:22:48.3397880+02:00 0HNB4FCL2KRIM:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:22:48.4787604+02:00 0HNB4FCL2KRIM:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:22:56.4468542+02:00 0HNB4FCL2KRIM:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:22:56.4675079+02:00 0HNB4FCL2KRIM:00000005 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:24:10.3469086+02:00 0HNB4FCL2KRIN:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:24:10.3678738+02:00 0HNB4FCL2KRIN:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:25:20.5288963+02:00 0HNB4FCL2KRIO:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:25:20.6607646+02:00 0HNB4FCL2KRIO:00000003 [INF] Executed DbCommand ("131"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:26:49.8328447+02:00 0HNB4FCL2KRIP:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:26:49.8573016+02:00 0HNB4FCL2KRIP:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:28:05.4542100+02:00 0HNB4FCL2KRIQ:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:28:05.6320339+02:00 0HNB4FCL2KRIQ:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:28:25.6601061+02:00 0HNB4FCL2KRIR:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:28:25.6895871+02:00 0HNB4FCL2KRIR:00000003 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:30:49.0708663+02:00 0HNB4FCL2KRIS:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:30:49.0942486+02:00 0HNB4FCL2KRIS:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:31:55.4408138+02:00 0HNB4FCL2KRIT:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:31:55.4993174+02:00 0HNB4FCL2KRIT:00000003 [INF] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:32:28.7988858+02:00 0HNB4FCL2KRIU:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:32:28.8186634+02:00 0HNB4FCL2KRIU:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:38:23.0326585+02:00 0HNB4FCL2KRIV:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:38:23.1659851+02:00 0HNB4FCL2KRIV:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T14:38:29.2463636+02:00 0HNB4FCL2KRJ0:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T14:38:29.2681072+02:00 0HNB4FCL2KRJ0:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:05:54.8032351+02:00 0HNB4FCL2KRJ1:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:05:55.2428746+02:00 0HNB4FCL2KRJ1:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:06:45.4846130+02:00 0HNB4FCL2KRJ2:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:06:45.8419123+02:00 0HNB4FCL2KRJ2:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:09:28.4094729+02:00 0HNB4FCL2KRJ3:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:09:28.4432453+02:00 0HNB4FCL2KRJ3:00000003 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:09:36.8258458+02:00 0HNB4FCL2KRJ3:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:09:36.8482302+02:00 0HNB4FCL2KRJ3:00000005 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:11:19.8971331+02:00 0HNB4FCL2KRJ4:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:11:20.0239390+02:00 0HNB4FCL2KRJ4:00000003 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:12:15.1374863+02:00 0HNB4FCL2KRJ5:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:12:15.1556583+02:00 0HNB4FCL2KRJ5:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:12:58.9874420+02:00 0HNB4FCL2KRJ5:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:12:59.0062049+02:00 0HNB4FCL2KRJ5:00000005 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:15:04.6978257+02:00 0HNB4FCL2KRJ5:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:15:04.7197669+02:00 0HNB4FCL2KRJ5:00000007 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:15:08.2767202+02:00 0HNB4FCL2KRJ5:00000008 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:15:08.2970943+02:00 0HNB4FCL2KRJ5:00000008 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:15:27.9273792+02:00 0HNB4FCL2KRJ5:0000000A [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:15:27.9465303+02:00 0HNB4FCL2KRJ5:0000000A [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:20:21.5330062+02:00 0HNB4FCL2KRJ6:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:20:21.7122491+02:00 0HNB4FCL2KRJ6:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:21:01.1865200+02:00 0HNB4FCL2KRJ6:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:21:01.2063656+02:00 0HNB4FCL2KRJ6:00000005 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:23:10.2944823+02:00 0HNB4FCL2KRJ6:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:23:10.3193301+02:00 0HNB4FCL2KRJ6:00000007 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:26:03.4636551+02:00 0HNB4FCL2KRJ7:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:26:03.6069912+02:00 0HNB4FCL2KRJ7:00000003 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:27:48.4778517+02:00 0HNB4FCL2KRJ7:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:27:48.4973324+02:00 0HNB4FCL2KRJ7:00000005 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:28:07.2646993+02:00 0HNB4FCL2KRJ7:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:28:07.2843892+02:00 0HNB4FCL2KRJ7:00000007 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:37:53.7240351+02:00 0HNB4FCL2KRJ8:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:37:53.8680804+02:00 0HNB4FCL2KRJ8:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:41:57.2622701+02:00 0HNB4FCL2KRJ9:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:41:57.2844290+02:00 0HNB4FCL2KRJ9:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:42:24.3109311+02:00 0HNB4FCL2KRJA:00000004 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:42:24.3343120+02:00 0HNB4FCL2KRJA:00000004 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:43:20.5566533+02:00 0HNB4FCL2KRJ9:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:43:20.7189542+02:00 0HNB4FCL2KRJ9:00000005 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:43:32.4771037+02:00 0HNB4FCL2KRJ9:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:43:32.4993422+02:00 0HNB4FCL2KRJ9:00000007 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t" (0723d8ff)
+2025-03-16T15:49:17.7468080+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T15:49:20.9883084+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:49:22.3175921+02:00  [INF] Executed DbCommand ("191"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:49:22.4554479+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:49:22.5417991+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T15:49:22.6064606+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T15:49:23.2089511+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T15:49:23.2467556+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T15:49:23.2683413+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T15:49:23.2896863+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T15:49:23.6874499+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T15:49:23.6876552+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T15:49:23.6877346+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T15:49:23.6878048+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T15:49:26.4921935+02:00 0HNB4I5E4039E:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:49:34.8209746+02:00 0HNB4I5E4039I:00000004 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:54:01.7737575+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T15:54:03.4821982+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:54:04.7745233+02:00  [INF] Executed DbCommand ("206"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:54:04.9168213+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:54:04.9628984+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T15:54:05.0151456+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T15:54:05.7539455+02:00  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T15:54:05.7796838+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T15:54:05.7987923+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T15:54:05.8224066+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T15:54:05.9511543+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T15:54:05.9513367+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T15:54:05.9514296+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T15:54:05.9515368+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T15:54:17.9416894+02:00 0HNB4I82A2V38:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:54:48.0965888+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T15:54:50.2879033+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:54:51.4250980+02:00  [INF] Executed DbCommand ("149"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:54:51.5729191+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:54:51.6258571+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T15:54:51.6826721+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T15:54:52.2626849+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T15:54:52.2977256+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T15:54:52.3223794+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T15:54:52.3464194+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T15:54:52.5160899+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T15:54:52.5164273+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T15:54:52.5165189+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T15:54:52.5165713+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T15:55:01.8078441+02:00 0HNB4I8G3RJ8N:00000004 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:56:20.4196517+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T15:56:22.9931118+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:56:24.0725618+02:00  [INF] Executed DbCommand ("256"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:56:24.2294263+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:56:24.2802846+02:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T15:56:24.3183598+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T15:56:24.7968516+02:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T15:56:24.8301805+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T15:56:24.9227026+02:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T15:56:24.9478985+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T15:56:25.4546791+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T15:56:25.4548703+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T15:56:25.4549463+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T15:56:25.4549971+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T15:59:01.4354167+02:00  [INF] Seeding Databases (1466a039)
+2025-03-16T15:59:03.1627979+02:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:59:04.2668483+02:00  [INF] Executed DbCommand ("143"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:59:04.4089051+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-03-16T15:59:04.4455397+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-03-16T15:59:04.4777766+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-03-16T15:59:04.8489566+02:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-03-16T15:59:04.8729933+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-03-16T15:59:04.8950156+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-03-16T15:59:04.9171312+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-03-16T15:59:05.0347412+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-03-16T15:59:05.0349710+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-03-16T15:59:05.0350767+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-03-16T15:59:05.0362307+02:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-03-16T15:59:16.8645323+02:00 0HNB4IARE38FB:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:59:17.1049390+02:00 0HNB4IARE38FB:00000002 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T15:59:32.6541505+02:00 0HNB4IARE38FC:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:59:32.6893090+02:00 0HNB4IARE38FC:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T15:59:34.4015654+02:00 0HNB4IARE38FD:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T15:59:34.4321435+02:00 0HNB4IARE38FD:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T16:19:50.3697480+02:00 0HNB4IARE38FE:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:19:50.7859399+02:00 0HNB4IARE38FE:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T16:52:47.6093814+02:00 0HNB4IARE38FF:00000003 [INF] Login user (3113d4e4)
+2025-03-16T16:52:47.6773061+02:00 0HNB4IARE38FF:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:52:48.0356273+02:00 0HNB4IARE38FF:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedEmail_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"Address\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"Owner\", a.\"PasswordHash\", a.\"Phone\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2025-03-16T16:52:48.4462527+02:00 0HNB4IARE38FF:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=["@__userId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2025-03-16T16:52:53.3659270+02:00 0HNB4IARE38FF:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:52:53.4464019+02:00 0HNB4IARE38FF:00000005 [INF] Executed DbCommand ("79"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T16:52:55.5004033+02:00 0HNB4IARE38FG:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:52:55.5219860+02:00 0HNB4IARE38FG:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T16:53:48.2232490+02:00 0HNB4IARE38FG:00000004 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:53:48.2666253+02:00 0HNB4IARE38FG:00000004 [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T16:56:10.8832778+02:00 0HNB4IARE38FH:00000003 [INF] Login user (3113d4e4)
+2025-03-16T16:56:10.8841759+02:00 0HNB4IARE38FH:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:56:10.9054432+02:00 0HNB4IARE38FH:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=["@__normalizedEmail_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"Address\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"Owner\", a.\"PasswordHash\", a.\"Phone\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2025-03-16T16:56:10.9379296+02:00 0HNB4IARE38FH:00000003 [INF] Executed DbCommand ("17"ms) [Parameters=["@__userId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2025-03-16T16:56:13.4084167+02:00 0HNB4IARE38FH:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:56:13.4318344+02:00 0HNB4IARE38FH:00000005 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T16:56:20.5760994+02:00 0HNB4IARE38FH:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T16:56:20.6011710+02:00 0HNB4IARE38FH:00000007 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T17:08:07.1557197+02:00 0HNB4IARE38FI:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T17:08:07.4632836+02:00 0HNB4IARE38FI:00000003 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T17:08:12.9643949+02:00 0HNB4IARE38FI:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T17:08:12.9825337+02:00 0HNB4IARE38FI:00000005 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T17:10:13.9635656+02:00 0HNB4IARE38FJ:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T17:10:13.9894102+02:00 0HNB4IARE38FJ:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T17:38:54.1551774+02:00 0HNB4IARE38FK:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T17:38:54.7711651+02:00 0HNB4IARE38FK:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T17:53:44.2868949+02:00 0HNB4IARE38FL:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T17:53:44.4229308+02:00 0HNB4IARE38FL:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T17:53:47.1750251+02:00 0HNB4IARE38FL:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T17:53:47.2321563+02:00 0HNB4IARE38FL:00000005 [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T17:57:04.2531692+02:00 0HNB4IARE38FM:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T17:57:04.3036775+02:00 0HNB4IARE38FM:00000003 [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T18:05:45.7861566+02:00 0HNB4IARE38FN:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:05:46.0308434+02:00 0HNB4IARE38FN:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T18:06:34.5289566+02:00 0HNB4IARE38FN:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:06:34.6114243+02:00 0HNB4IARE38FN:00000005 [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T18:10:38.9764767+02:00 0HNB4IARE38FO:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:10:39.0252475+02:00 0HNB4IARE38FO:00000002 [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T18:11:02.6135440+02:00 0HNB4IARE38FO:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:11:02.8618920+02:00 0HNB4IARE38FO:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T18:11:39.0477801+02:00 0HNB4IARE38FO:00000005 [INF] Login user (3113d4e4)
+2025-03-16T18:11:39.0485324+02:00 0HNB4IARE38FO:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:11:39.0778922+02:00 0HNB4IARE38FO:00000005 [INF] Executed DbCommand ("27"ms) [Parameters=["@__normalizedEmail_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"Address\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"Owner\", a.\"PasswordHash\", a.\"Phone\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2025-03-16T18:11:39.1117458+02:00 0HNB4IARE38FO:00000005 [INF] Executed DbCommand ("19"ms) [Parameters=["@__userId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2025-03-16T18:11:41.5014021+02:00 0HNB4IARE38FO:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:11:41.5273641+02:00 0HNB4IARE38FO:00000007 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T18:11:48.9505505+02:00 0HNB4IARE38FO:00000009 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:11:48.9750402+02:00 0HNB4IARE38FO:00000009 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-03-16T18:12:26.1152017+02:00 0HNB4IARE38FO:0000000B [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:12:26.1455087+02:00 0HNB4IARE38FO:0000000B [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T18:12:43.7613972+02:00 0HNB4IARE38FO:0000000D [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:12:43.7842727+02:00 0HNB4IARE38FO:0000000D [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-03-16T18:13:14.9982839+02:00 0HNB4IARE38FO:0000000F [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-03-16T18:13:15.0605137+02:00 0HNB4IARE38FO:0000000F [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)

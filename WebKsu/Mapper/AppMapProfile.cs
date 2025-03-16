@@ -57,7 +57,7 @@ namespace WebKsu.Mapper
                
 
             CreateMap<BanerEntity, BanerItemViewModel>()
-
+                .ForMember(x => x.DateCreate, opt => opt.MapFrom(x => x.DateCreated.ToString("dd.MM.yyyy")))
                  .ForMember(x => x.Image, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto}"));
 
             //мепери для runline

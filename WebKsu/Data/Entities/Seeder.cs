@@ -22,6 +22,7 @@ namespace WebKsu.Data.Entities
 
                     SeedRole(services);//сидим роли
                     SeedBaner(services);
+                    SeedRunLine(services);
                    /* SeedCateory(services);
                     SeedInventoryStatus(services);
                     SeedProduct(services);
@@ -158,7 +159,29 @@ namespace WebKsu.Data.Entities
 
         }*/
 
+        private static void SeedRunLine(IServiceProvider service)
+        {
 
+            var context = service.GetRequiredService<AppEFContext>();
+
+            if (!context.RunLine.Any())
+            {
+
+                RunLineEntity product = new RunLineEntity
+                {
+
+                  
+                    Description = "     Надійшли нові документи, завітайте на вкладку НОВИНИ",
+                   
+                };
+
+                context.RunLine.Add(product);
+
+                context.SaveChanges();
+
+            }
+
+        }
 
 
         private static void SeedBaner(IServiceProvider service)

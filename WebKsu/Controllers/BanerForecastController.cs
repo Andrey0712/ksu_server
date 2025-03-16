@@ -70,8 +70,9 @@ namespace WebKsu.Controllers
             try
             {
                 Thread.Sleep(2000);
-                var model = await _context.Baner
-                                 .Select(x => _mapper.Map<BanerItemViewModel>(x)).ToListAsync();
+                var model = await _context.Baner.OrderByDescending(x => x.DateCreated)
+                                 .Select(x => _mapper.Map<BanerItemViewModel>(x))
+                                 .ToListAsync();
                 return Ok(model);
             }
             catch (Exception ex)
