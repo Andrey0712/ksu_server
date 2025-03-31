@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
+using System.Security.Claims;
 using WebKsu.Constants;
 using WebKsu.Data.Entities.Identity;
 
@@ -23,10 +24,11 @@ namespace WebKsu.Data.Entities
                     SeedRole(services);//сидим роли
                     SeedBaner(services);
                     SeedRunLine(services);
-                   /* SeedCateory(services);
-                    SeedInventoryStatus(services);
-                    SeedProduct(services);
-                    SeedOrderStatuses(services);*/
+                     SeedSex(services);
+                    SeedSHowId(services);
+                    SeedDogClases(services);
+                    /*SeedProduct(services);;*/
+                    SeedStatusesShow(services);
 
                 }
                 catch (Exception)
@@ -80,25 +82,25 @@ namespace WebKsu.Data.Entities
 
         }
 
-        /*private static void SeedOrderStatuses(IServiceProvider service)
+        private static void SeedStatusesShow(IServiceProvider service)
         {
             var context = service.GetRequiredService<AppEFContext>();
-            if (!context.OrderStatuses.Any())
+            if (!context.ValidateShowEntity.Any())
             {
-                context.OrderStatuses
-                        .Add(new OrderStatusEntity
+                context.ValidateShowEntity
+                        .Add(new ValidateShowEntity
                         {
-                            Name = "Нове замовленя"
+                            Name = "Нова заявка"
                         });
 
-                context.OrderStatuses
-                    .Add(new OrderStatusEntity
+                context.ValidateShowEntity
+                    .Add(new ValidateShowEntity
                     {
-                        Name = "Відправлено"
+                        Name = "Погоджено"
                     });
 
-                context.OrderStatuses
-                    .Add(new OrderStatusEntity
+                context.ValidateShowEntity
+                    .Add(new ValidateShowEntity
                     {
                         Name = "Відхилено"
                     });
@@ -106,58 +108,87 @@ namespace WebKsu.Data.Entities
                 context.SaveChanges();
             }
 
-        }*/
+        }
 
-        /*private static void SeedCateory(IServiceProvider service)
+        private static void SeedDogClases(IServiceProvider service)
         {
             var context = service.GetRequiredService<AppEFContext>();
-            if (!context.Categories.Any())
+            if (!context.ClassIdEntity.Any())
             {
-                context.Categories.AddRange(new List<CategoryEntity>
+                context.ClassIdEntity.AddRange(new List<DogClasesEntity>
                 {
-                    new CategoryEntity
-                    {
-                        Name="Корм"
+                    new() {
+                        Name="Клас бебі 3-6 місяців"
                     },
-                    new CategoryEntity
-                    {
-                        Name="Вітаміни"
+                    new() {
+                        Name="Клас цуценят 6-9 місяців"
                     },
-                    new CategoryEntity
-                    {
-                        Name="Іграшки"
+                    new() {
+                        Name="Клас юніорів 9-18 місяців"
                     },
-                    new CategoryEntity
-                    {
-                        Name="Ветеринарні препарати"
+                    new() {
+                        Name="Клас інтермедія 15 міс-2 роки"
+                    },
+                    new() {
+                        Name="Клас відкритий 15 місяців"
+                    },
+                    new() {
+                        Name="Робочий клас з 15 місяців"
+                    },
+                    new() {
+                        Name="Клас чемпіонів 15 місяців"
+                    },
+                    new() {
+                        Name="Клас ветеранів з 8 років"
                     }
                 });
                 context.SaveChanges();
             }
 
-        }*/
+        }
 
-        /*private static void SeedInventoryStatus(IServiceProvider service)
+        private static void SeedSex(IServiceProvider service)
         {
             var context = service.GetRequiredService<AppEFContext>();
-            if (!context.InventoryStatus.Any())
+            if (!context.SexEntity.Any())
             {
-                context.InventoryStatus.AddRange(new List<InventoryStatusEntity>
+                context.SexEntity.AddRange(new List<SexEntity>
                 {
-                    new InventoryStatusEntity
+                    new SexEntity
                     {
-                        Name="У наявності"
+                        Name="Кобель"
                     },
-                    new InventoryStatusEntity
+                    new SexEntity
                     {
-                        Name="Очікуєм"
+                        Name="Сука"
                     },
 
                 });
                 context.SaveChanges();
             }
 
-        }*/
+        }
+        private static void SeedSHowId(IServiceProvider service)
+        {
+            var context = service.GetRequiredService<AppEFContext>();
+            if (!context.ShowIdEntity.Any())
+            {
+                context.ShowIdEntity.AddRange(new List<ShowIdEntity>
+                {
+                    new ShowIdEntity
+                    {
+                        Name="CAC-UA Червона калина"
+                    },
+                    new ShowIdEntity
+                    {
+                        Name="CACIB-FCI Бурштиновий кубок"
+                    },
+
+                });
+                context.SaveChanges();
+            }
+
+        }
 
         private static void SeedRunLine(IServiceProvider service)
         {

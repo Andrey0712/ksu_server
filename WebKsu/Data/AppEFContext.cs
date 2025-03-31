@@ -16,6 +16,11 @@ namespace WebKsu.Data
         }
         public DbSet<BanerEntity> Baner { get; set; }
         public DbSet<RunLineEntity> RunLine { get; set; }
+        public DbSet<ShowEntity> Shows { get; set; }
+        public DbSet<ShowIdEntity> ShowIdEntity { get; set; }
+        public DbSet<SexEntity> SexEntity { get; set; }
+        public DbSet<DogClasesEntity> ClassIdEntity { get; set; }
+        public DbSet<ValidateShowEntity> ValidateShowEntity { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
