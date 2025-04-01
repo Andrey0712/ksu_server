@@ -2,8 +2,7 @@
 
 namespace WebKsu.Model
 {
-    public class ShowViewModels
-    {
+    
         /// <summary>
         /// Модель для створення show
         /// </summary>
@@ -58,6 +57,38 @@ namespace WebKsu.Model
 
         }
 
+        public class ShowItemViewModel
+        {
+         public int Id { get; set; }
+        public string ShowIdEntity { get; set; }
+        public string ClassIdEntity { get; set; }
+        public string SexEntity { get; set; }
 
-    }
+        public string Breed { get; set; }
+        public string NameDog { get; set; }
+        public string Color { get; set; }
+        public string Pedigree { get; set; }
+        public string Chip { get; set; }
+        public string Father { get; set; }
+        public string Mather { get; set; }
+        public DateTime Date { get; set; }
+        public string Owner { get; set; }
+        public string Breeder { get; set; }
+        public string Adress { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+
+        public string StartPhoto1 { get; set; }
+        public string StartPhoto2 { get; set; }
+        public string StartPhoto3 { get; set; }
+        public string StartPhoto4 { get; set; }
+        public string StartPhoto5 { get; set; }
+        public string StartPhoto6 { get; set; }
+        public string ValidateShowEntity { get; set; }
+
+        }
+
+
+
+   
 }

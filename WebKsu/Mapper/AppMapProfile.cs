@@ -5,6 +5,7 @@ using WebKsu.Data.Entities.Identity;
 using WebKsu.Model;
 using static WebKsu.Model.BanerViewModel;
 using static WebKsu.Model.RunLineViewModel;
+/*using static WebKsu.Model.ShowViewModels;*/
 
 namespace WebKsu.Mapper
 {
@@ -39,11 +40,22 @@ namespace WebKsu.Mapper
 
 
             CreateMap<AppUser, ProfileViewModel>();
-                
 
-            //мепери для категорії
-            /* CreateMap<CreateCategoryViewModel, CategoryEntity>();
-             CreateMap<CategoryEntity, CategoryItemViewModel>();*/
+
+            //мепери для класів собак
+            CreateMap<CreateDogsClasessViewModel, DogClasesEntity>();
+            CreateMap<DogClasesEntity, DogsClasessItemViewModel>();
+
+            //мепери для радіобатона виставок
+            CreateMap<CreateShowIdViewModel, ShowIdEntity>();
+            CreateMap<ShowIdEntity, ShowIdItemViewModel>();
+
+            //мепери для радіобатона статі
+            CreateMap<CreateSexViewModel, SexEntity>();
+            CreateMap<SexEntity, SexItemViewModel>();
+            //мепери для малидності заповненя форми
+            CreateMap<CreateValidateViewModel, ValidateShowEntity>();
+            CreateMap<ValidateShowEntity, ValidateItemViewModel>();
 
             //мепери для блога
             CreateMap<BanerAddViewModel, BanerEntity>()
@@ -69,6 +81,73 @@ namespace WebKsu.Mapper
 
             CreateMap<RunLineEntity, RunLineItemViewModel>();
 
+            CreateMap<ValidateShowEntity, ValidateItemViewModel>();
+
+            //мепери для show
+            CreateMap<ShowAddViewModel, ShowEntity>()
+               
+                .ForMember(x => x.DateCreated, opt => opt.MapFrom(x =>
+                    DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc)))
+
+               .ForMember(x => x.StartPhoto1, opt => opt.Ignore())
+               .ForMember(x => x.StartPhoto2, opt => opt.Ignore())
+               .ForMember(x => x.StartPhoto3, opt => opt.Ignore())
+               .ForMember(x => x.StartPhoto4, opt => opt.Ignore())
+               .ForMember(x => x.StartPhoto5, opt => opt.Ignore())
+               .ForMember(x => x.StartPhoto6, opt => opt.Ignore())
+               
+               .ForMember(x => x.ClassId, opt => opt.MapFrom(opt => opt.ClassId))
+                .ForMember(x => x.ShowId, opt => opt.MapFrom(opt => opt.ShowId))
+                 .ForMember(x => x.SexId, opt => opt.MapFrom(opt => opt.SexId))
+
+               .ForMember(x => x.Breed, opt => opt.MapFrom(opt => opt.Breed))
+               .ForMember(x => x.Color, opt => opt.MapFrom(opt => opt.Color))
+               .ForMember(x => x.NameDog, opt => opt.MapFrom(opt => opt.NameDog))
+                .ForMember(x => x.Pedigree, opt => opt.MapFrom(opt => opt.Pedigree))
+                .ForMember(x => x.Chip, opt => opt.MapFrom(opt => opt.Chip))
+               .ForMember(x => x.Father, opt => opt.MapFrom(opt => opt.Father))
+               .ForMember(x => x.Mather, opt => opt.MapFrom(opt => opt.Mather))
+               .ForMember(x => x.Date, opt => opt.MapFrom(opt => opt.Date))
+
+                .ForMember(x => x.Breeder, opt => opt.MapFrom(opt => opt.Breeder))
+                 .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
+               .ForMember(x => x.Adress, opt => opt.MapFrom(opt => opt.Adress))
+               .ForMember(x => x.Phone, opt => opt.MapFrom(opt => opt.Phone))
+                .ForMember(x => x.Email, opt => opt.MapFrom(opt => opt.Email))
+            .ForMember(x => x.ValidateShowId, opt => opt.MapFrom(opt => 1));
+
+
+
+            /*CreateMap<ProductEntity, ProductItemViewModel>()
+
+               .ForMember(x => x.Price, opt => opt.MapFrom(x => x.Price.ToString(cultureInfo)))
+               .ForMember(x => x.StartPhoto, opt => opt.MapFrom(x => $"/uploads/{x.StartPhoto}"));*/
+
+            CreateMap<ShowEntity, ShowItemViewModel>()
+               .ForMember(x => x.StartPhoto1, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto1}"))
+               .ForMember(x => x.StartPhoto2, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto2}"))
+               .ForMember(x => x.StartPhoto3, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto3}"))
+               .ForMember(x => x.StartPhoto4, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto4}"))
+               .ForMember(x => x.StartPhoto5, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto5}"))
+               .ForMember(x => x.StartPhoto6, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto6}"))
+               .ForMember(x => x.ShowIdEntity, opt => opt.MapFrom(x => x.ShowIdEntity.Name))
+               .ForMember(x => x.ClassIdEntity, opt => opt.MapFrom(x => x.ClassIdEntity.Name))
+               .ForMember(x => x.SexEntity, opt => opt.MapFrom(x => x.SexEntity.Name))
+               .ForMember(x => x.Breed, opt => opt.MapFrom(x => x.Breed))
+                .ForMember(x => x.NameDog, opt => opt.MapFrom(x => x.NameDog))
+                 .ForMember(x => x.Color, opt => opt.MapFrom(x => x.Color))
+                  .ForMember(x => x.Pedigree, opt => opt.MapFrom(x => x.Pedigree))
+                   .ForMember(x => x.Chip, opt => opt.MapFrom(x => x.Chip))
+                    .ForMember(x => x.Father, opt => opt.MapFrom(x => x.Father))
+                     .ForMember(x => x.Mather, opt => opt.MapFrom(x => x.Mather))
+                      .ForMember(x => x.Date, opt => opt.MapFrom(x => x.Date))
+                       .ForMember(x => x.Owner, opt => opt.MapFrom(x => x.Owner))
+                        .ForMember(x => x.Breeder, opt => opt.MapFrom(x => x.Breeder))
+                         .ForMember(x => x.Adress, opt => opt.MapFrom(x => x.Adress))
+                          .ForMember(x => x.Phone, opt => opt.MapFrom(x => x.Phone))
+                         .ForMember(x => x.Email, opt => opt.MapFrom(x => x.Email))
+            .ForMember(x => x.ValidateShowEntity, opt => opt.MapFrom(x => x.ValidateShowEntity.Name));
+
 
             /* CreateMap<CartAddViewModel, CartEntity>();
 
@@ -81,7 +160,7 @@ namespace WebKsu.Mapper
 
 
 
-             CreateMap<OrderStatusEntity, OrderStatusItemViewModel>();
+            
 
              CreateMap<OrderAddViewModel, OrderEntity>()
                  .ForMember(x => x.DateCreated, opt => opt.MapFrom(x =>
