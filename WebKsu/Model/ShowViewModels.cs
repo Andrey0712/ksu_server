@@ -53,7 +53,7 @@ namespace WebKsu.Model
             [Display(Name = "Фотографія6")]
             public IFormFile StartPhoto6 { get; set; }
             [Display(Name = "Дата народженя"), Required(ErrorMessage = "Поле 'Дата народженя' не може бути пустим!")]
-            public DateTime Date { get; set; }
+            public string Date { get; set; }
 
         }
 
@@ -71,7 +71,7 @@ namespace WebKsu.Model
         public string Chip { get; set; }
         public string Father { get; set; }
         public string Mather { get; set; }
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
         public string Owner { get; set; }
         public string Breeder { get; set; }
         public string Adress { get; set; }

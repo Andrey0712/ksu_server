@@ -107,8 +107,9 @@ namespace WebKsu.Mapper
                 .ForMember(x => x.Chip, opt => opt.MapFrom(opt => opt.Chip))
                .ForMember(x => x.Father, opt => opt.MapFrom(opt => opt.Father))
                .ForMember(x => x.Mather, opt => opt.MapFrom(opt => opt.Mather))
-               .ForMember(x => x.Date, opt => opt.MapFrom(opt => opt.Date))
-
+              /* .ForMember(x => x.Date, opt => opt.MapFrom(opt => opt.Date))*/
+                .ForMember(x => x.Date, opt => opt.MapFrom(x =>
+                    DateTime.SpecifyKind(DateTime.Parse(x.Date, cultureInfo), DateTimeKind.Utc)))
                 .ForMember(x => x.Breeder, opt => opt.MapFrom(opt => opt.Breeder))
                  .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
                .ForMember(x => x.Adress, opt => opt.MapFrom(opt => opt.Adress))
@@ -123,6 +124,7 @@ namespace WebKsu.Mapper
                .ForMember(x => x.Price, opt => opt.MapFrom(x => x.Price.ToString(cultureInfo)))
                .ForMember(x => x.StartPhoto, opt => opt.MapFrom(x => $"/uploads/{x.StartPhoto}"));*/
 
+           
             CreateMap<ShowEntity, ShowItemViewModel>()
                .ForMember(x => x.StartPhoto1, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto1}"))
                .ForMember(x => x.StartPhoto2, opt => opt.MapFrom(x => $"uploads/{x.StartPhoto2}"))
@@ -140,7 +142,8 @@ namespace WebKsu.Mapper
                    .ForMember(x => x.Chip, opt => opt.MapFrom(x => x.Chip))
                     .ForMember(x => x.Father, opt => opt.MapFrom(x => x.Father))
                      .ForMember(x => x.Mather, opt => opt.MapFrom(x => x.Mather))
-                      .ForMember(x => x.Date, opt => opt.MapFrom(x => x.Date))
+                     /* .ForMember(x => x.Date, opt => opt.MapFrom(x => x.Date))*/
+                      .ForMember(x => x.Date, opt => opt.MapFrom(x => x.Date.ToString("dd.MM.yyyy")))
                        .ForMember(x => x.Owner, opt => opt.MapFrom(x => x.Owner))
                         .ForMember(x => x.Breeder, opt => opt.MapFrom(x => x.Breeder))
                          .ForMember(x => x.Adress, opt => opt.MapFrom(x => x.Adress))

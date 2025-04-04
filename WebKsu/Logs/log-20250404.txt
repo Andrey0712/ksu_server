@@ -1,0 +1,262 @@
+2025-04-04T18:11:21.6958653+03:00  [INF] Seeding Databases (1466a039)
+2025-04-04T18:11:25.6288949+03:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T18:11:26.8244976+03:00  [INF] Executed DbCommand ("153"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T18:11:26.9982566+03:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T18:11:27.0800098+03:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-04-04T18:11:27.1204303+03:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-04-04T18:11:27.8952181+03:00  [INF] Executed DbCommand ("305"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-04-04T18:11:27.9659391+03:00  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-04-04T18:11:27.9941171+03:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-04-04T18:11:28.0239540+03:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-04-04T18:11:28.0691738+03:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblSex\" AS t)" (0723d8ff)
+2025-04-04T18:11:28.0929843+03:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblShowId\" AS t)" (0723d8ff)
+2025-04-04T18:11:28.1297579+03:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblDogClases\" AS t)" (0723d8ff)
+2025-04-04T18:11:28.1660832+03:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblValidateShow\" AS t)" (0723d8ff)
+2025-04-04T18:11:28.5415461+03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-04-04T18:11:28.5418170+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-04T18:11:28.5419540+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-04T18:11:28.5737331+03:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-04-04T18:15:20.7385570+03:00 0HNBJHBSPFPK1:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T18:15:21.5751534+03:00 0HNBJHBSPFPK1:00000002 [INF] Executed DbCommand ("151"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?' (DbType = Boolean), @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?', @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"tblShow\" (\"Adress\", \"Breed\", \"Breeder\", \"Chip\", \"ClassId\", \"Color\", \"Date\", \"DateCreated\", \"Email\", \"Father\", \"IsDeleted\", \"Mather\", \"NameDog\", \"Owner\", \"Pedigree\", \"Phone\", \"SexId\", \"ShowId\", \"StartPhoto1\", \"StartPhoto2\", \"StartPhoto3\", \"StartPhoto4\", \"StartPhoto5\", \"StartPhoto6\", \"ValidateShowId\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-04T18:28:37.9620976+03:00 0HNBJHBSPFPK3:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T18:28:38.7083731+03:00 0HNBJHBSPFPK3:00000002 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-04T18:33:51.8594743+03:00  [INF] Seeding Databases (1466a039)
+2025-04-04T18:33:56.2602991+03:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T18:33:58.0159111+03:00  [INF] Executed DbCommand ("284"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T18:33:58.1992934+03:00  [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T18:33:58.3341246+03:00  [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-04-04T18:33:58.4582246+03:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-04-04T18:33:59.4768947+03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-04-04T18:33:59.5299030+03:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-04-04T18:33:59.5574012+03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-04-04T18:33:59.5811663+03:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-04-04T18:33:59.6114635+03:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblSex\" AS t)" (0723d8ff)
+2025-04-04T18:33:59.6407748+03:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblShowId\" AS t)" (0723d8ff)
+2025-04-04T18:33:59.6644515+03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblDogClases\" AS t)" (0723d8ff)
+2025-04-04T18:33:59.6863889+03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblValidateShow\" AS t)" (0723d8ff)
+2025-04-04T18:34:00.1551688+03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-04-04T18:34:00.1586922+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-04T18:34:00.1637998+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-04T18:34:00.1669562+03:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-04-04T18:37:02.5784781+03:00  [INF] Seeding Databases (1466a039)
+2025-04-04T18:37:06.5932994+03:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T18:37:08.6431872+03:00  [INF] Executed DbCommand ("538"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T18:37:08.8059360+03:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T18:37:08.8673971+03:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-04-04T18:37:08.9218654+03:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-04-04T18:37:09.6996970+03:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-04-04T18:37:09.7395499+03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-04-04T18:37:09.7655253+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-04-04T18:37:09.7986278+03:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-04-04T18:37:09.8222955+03:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblSex\" AS t)" (0723d8ff)
+2025-04-04T18:37:09.8469559+03:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblShowId\" AS t)" (0723d8ff)
+2025-04-04T18:37:09.8700030+03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblDogClases\" AS t)" (0723d8ff)
+2025-04-04T18:37:09.8993519+03:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblValidateShow\" AS t)" (0723d8ff)
+2025-04-04T18:37:10.1857131+03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-04-04T18:37:10.1889566+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-04T18:37:10.1926478+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-04T18:37:10.1961223+03:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-04-04T18:46:59.0560104+03:00 0HNBJHQ872SRC:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T18:47:00.3935181+03:00 0HNBJHQ872SRC:00000003 [INF] Executed DbCommand ("124"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?' (DbType = Boolean), @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?', @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"tblShow\" (\"Adress\", \"Breed\", \"Breeder\", \"Chip\", \"ClassId\", \"Color\", \"Date\", \"DateCreated\", \"Email\", \"Father\", \"IsDeleted\", \"Mather\", \"NameDog\", \"Owner\", \"Pedigree\", \"Phone\", \"SexId\", \"ShowId\", \"StartPhoto1\", \"StartPhoto2\", \"StartPhoto3\", \"StartPhoto4\", \"StartPhoto5\", \"StartPhoto6\", \"ValidateShowId\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-04T18:47:06.1389617+03:00 0HNBJHQ872SRC:00000004 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T18:47:07.6889704+03:00 0HNBJHQ872SRC:00000004 [INF] Executed DbCommand ("1,151"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-04T19:03:24.2155737+03:00  [INF] Seeding Databases (1466a039)
+2025-04-04T19:03:28.6556438+03:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T19:03:30.2299729+03:00  [INF] Executed DbCommand ("225"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T19:03:30.4159056+03:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T19:03:30.4850470+03:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-04-04T19:03:30.5424828+03:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-04-04T19:03:31.3687166+03:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-04-04T19:03:31.4057672+03:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-04-04T19:03:31.4369101+03:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-04-04T19:03:31.4659646+03:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-04-04T19:03:31.4940425+03:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblSex\" AS t)" (0723d8ff)
+2025-04-04T19:03:31.5183335+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblShowId\" AS t)" (0723d8ff)
+2025-04-04T19:03:31.5434467+03:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblDogClases\" AS t)" (0723d8ff)
+2025-04-04T19:03:31.5697166+03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblValidateShow\" AS t)" (0723d8ff)
+2025-04-04T19:03:31.9715049+03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-04-04T19:03:31.9754877+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-04T19:03:31.9815573+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-04T19:03:31.9846623+03:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-04-04T19:03:47.5067113+03:00 0HNBJI8VO68P3:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T19:08:44.6248908+03:00  [INF] Seeding Databases (1466a039)
+2025-04-04T19:08:46.5103084+03:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T19:08:47.6761541+03:00  [INF] Executed DbCommand ("127"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T19:08:47.8483209+03:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-04T19:08:47.8866944+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-04-04T19:08:47.9239522+03:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-04-04T19:08:48.3453411+03:00  [INF] Executed DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-04-04T19:08:48.4035226+03:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-04-04T19:08:48.4570910+03:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-04-04T19:08:48.5268899+03:00  [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-04-04T19:08:48.5856188+03:00  [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblSex\" AS t)" (0723d8ff)
+2025-04-04T19:08:48.6405882+03:00  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblShowId\" AS t)" (0723d8ff)
+2025-04-04T19:08:48.7035795+03:00  [INF] Executed DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblDogClases\" AS t)" (0723d8ff)
+2025-04-04T19:08:48.7759365+03:00  [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblValidateShow\" AS t)" (0723d8ff)
+2025-04-04T19:08:48.8878779+03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-04-04T19:08:48.8881439+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-04T19:08:48.8882281+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-04T19:08:48.8882995+03:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-04-04T19:09:00.8371126+03:00 0HNBJIBU45HRI:00000004 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-04T19:09:01.2571074+03:00 0HNBJIBU45HRI:00000004 [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
