@@ -11,6 +11,7 @@ using WebKsu.Data;
 using Microsoft.EntityFrameworkCore;
 using static WebKsu.Model.RunLineViewModel;
 using WebKsu.Model;
+using System;
 
 namespace WebKsu.Controllers
 {
@@ -140,7 +141,23 @@ namespace WebKsu.Controllers
                          fileNames.Add(fileName);
                      }
                  }*/
-
+                var cultureInfo = new CultureInfo("ua-UA");
+                var dateTime = DateTime.Now;
+                try
+                {
+                    string date = model.Date;
+                    if (date.Length > 12)
+                        date = date.Substring(4, date.Length - (date.Length - 12));
+                    dateTime = DateTime.SpecifyKind(DateTime.Parse(date, cultureInfo), DateTimeKind.Utc);
+                    // var dateTime = DateTime.ParseExact(date, "D", cultureInfo);
+                   
+                    Console.WriteLine(dateTime);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine($"Unable to parse '{model.Date}'");
+                }
+                
                 string startFoto1 = String.Empty;
                 string startFoto2 = String.Empty;
                 string startFoto3 = String.Empty;
@@ -148,6 +165,7 @@ namespace WebKsu.Controllers
                 string startFoto5 = String.Empty;
                 string startFoto6 = String.Empty;
                 var product = _mapper.Map<ShowEntity>(model);
+                product.Date = dateTime;
 
                 if (model.StartPhoto1 != null)
                 {
@@ -227,6 +245,7 @@ namespace WebKsu.Controllers
                     }
                     product.StartPhoto6 = randomFilename;
                 }
+                
                 _context.Shows.Add(product);
                 await _context.SaveChangesAsync();
 

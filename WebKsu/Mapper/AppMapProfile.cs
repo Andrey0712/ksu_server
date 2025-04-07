@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using System.Globalization;
 using WebKsu.Data.Entities;
 using WebKsu.Data.Entities.Identity;
@@ -87,7 +88,7 @@ namespace WebKsu.Mapper
             CreateMap<ShowAddViewModel, ShowEntity>()
                
                 .ForMember(x => x.DateCreated, opt => opt.MapFrom(x =>
-                    DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc)))
+                    DateTime.SpecifyKind(DateTime.Now.AddHours(-3), DateTimeKind.Utc)))
 
                .ForMember(x => x.StartPhoto1, opt => opt.Ignore())
                .ForMember(x => x.StartPhoto2, opt => opt.Ignore())
@@ -107,9 +108,12 @@ namespace WebKsu.Mapper
                 .ForMember(x => x.Chip, opt => opt.MapFrom(opt => opt.Chip))
                .ForMember(x => x.Father, opt => opt.MapFrom(opt => opt.Father))
                .ForMember(x => x.Mather, opt => opt.MapFrom(opt => opt.Mather))
-              /* .ForMember(x => x.Date, opt => opt.MapFrom(opt => opt.Date))*/
-                .ForMember(x => x.Date, opt => opt.MapFrom(x =>
-                    DateTime.SpecifyKind(DateTime.Parse(x.Date, cultureInfo), DateTimeKind.Utc)))
+               .ForMember(x => x.Date, opt => opt.Ignore())
+
+                //.ForMember(x => x.Date, opt => opt.MapFrom(opt => opt.Date))
+                /*.ForMember(x => x.Date, opt => opt.MapFrom(x =>
+                DateTime.ParseExact(x.Date, "D", cultureInfo)))*/
+                //DateTime.SpecifyKind(DateTime.Parse(x.Date, cultureInfo), DateTimeKind.Utc)))
                 .ForMember(x => x.Breeder, opt => opt.MapFrom(opt => opt.Breeder))
                  .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
                .ForMember(x => x.Adress, opt => opt.MapFrom(opt => opt.Adress))
