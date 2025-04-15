@@ -43,22 +43,14 @@ namespace WebKsu.Controllers
         /// <response code="400">List show has missing/invalid values</response>
         /// <response code="500">Oops! Can't get  show list right now</response>
 
-        /// <summary>
-        /// Список продуктів
-        /// </summary>
-        /// <returns>Повертає лист</returns>
-        /// <remarks>Awesomeness!</remarks>
-        /// <response code="200">List products</response>
-        /// <response code="400">List products has missing/invalid values</response>
-        /// <response code="500">Oops! Can't get  products list right now</response>
-
+        
         [HttpGet]
         [Route("list")]
         public async Task<IActionResult> List()
         {
             try
             {
-                Thread.Sleep(2000);
+                //Thread.Sleep(2000);
                 var model = await _context.Shows
                      .Include(x => x.ClassIdEntity)
                      .Include(x => x.ShowIdEntity)
@@ -259,6 +251,36 @@ namespace WebKsu.Controllers
                     _context.ProductImages.Add(productImage);
                     _context.SaveChanges();
                 }*/
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    invalid = ex.Message
+                });
+            }
+        }
+        /// <summary>
+        ///Зміна статусу замовленя
+        /// </summary>
+        /// <param name="model">Понель із даними</param>
+        /// <returns>Повертає ok</returns>
+        /// <remarks>Awesomeness!</remarks>
+        /// <response code="200">Change order</response>
+        /// <response code="400">Change order has missing/invalid values</response>
+        /// <response code="500">Oops! Can't Change order right now</response>
+
+        [HttpPost]
+        [Route("changeStatus")]
+        //[Authorize(Roles = Roles.Admin)]
+        public async Task<IActionResult> ChangeStatus([FromBody] ShowChangeStatusViewModel model)
+        {
+            try
+            {
+                var order = await _context.Shows.SingleOrDefaultAsync(x => x.Id == model.Id);
+                order.ValidateShowId = model.StatusId;
+                _context.SaveChanges();
                 return Ok();
             }
             catch (Exception ex)

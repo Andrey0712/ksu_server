@@ -85,11 +85,17 @@ namespace WebKsu.Model
         public string StartPhoto4 { get; set; }
         public string StartPhoto5 { get; set; }
         public string StartPhoto6 { get; set; }
+        public string DateCreate { get; set; }
         public string ValidateShowEntity { get; set; }
 
         }
 
+    public class ShowChangeStatusViewModel
+    {
+        public int Id { get; set; }
+        public int StatusId { get; set; }
+    }
 
 
-   
+
 }

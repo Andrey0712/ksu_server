@@ -153,6 +153,7 @@ namespace WebKsu.Mapper
                          .ForMember(x => x.Adress, opt => opt.MapFrom(x => x.Adress))
                           .ForMember(x => x.Phone, opt => opt.MapFrom(x => x.Phone))
                          .ForMember(x => x.Email, opt => opt.MapFrom(x => x.Email))
+                         .ForMember(x => x.DateCreate, opt => opt.MapFrom(x => x.DateCreated.ToString("dd.MM.yyyy")))
             .ForMember(x => x.ValidateShowEntity, opt => opt.MapFrom(x => x.ValidateShowEntity.Name));
 
 
