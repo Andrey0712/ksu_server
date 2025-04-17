@@ -1,0 +1,566 @@
+2025-04-16T14:01:58.2064280+03:00  [INF] Seeding Databases (1466a039)
+2025-04-16T14:02:01.7209009+03:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:02:03.0280783+03:00  [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-16T14:02:03.1893554+03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-16T14:02:03.2533782+03:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-04-16T14:02:03.2917257+03:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-04-16T14:02:03.8056902+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-04-16T14:02:03.8356656+03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-04-16T14:02:03.8554022+03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-04-16T14:02:03.8761388+03:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-04-16T14:02:03.8958559+03:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblSex\" AS t)" (0723d8ff)
+2025-04-16T14:02:03.9173745+03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblShowId\" AS t)" (0723d8ff)
+2025-04-16T14:02:03.9382653+03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblDogClases\" AS t)" (0723d8ff)
+2025-04-16T14:02:03.9588746+03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblValidateShow\" AS t)" (0723d8ff)
+2025-04-16T14:02:04.2857606+03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-04-16T14:02:04.2859805+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-16T14:02:04.2860609+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-16T14:02:04.2861110+03:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-04-16T14:07:56.4804075+03:00 0HNBSQOFLLPRG:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:07:56.9351876+03:00 0HNBSQOFLLPRG:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-16T14:08:50.8071146+03:00 0HNBSQOFLLPRI:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:08:51.0043535+03:00 0HNBSQOFLLPRI:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:08:51.0491289+03:00 0HNBSQOFLLPRH:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:08:51.2137116+03:00 0HNBSQOFLLPRH:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T14:09:12.7808207+03:00 0HNBSQOFLLPRJ:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:09:12.8152630+03:00 0HNBSQOFLLPRJ:00000003 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:10:16.8605290+03:00 0HNBSQOFLLPRK:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:10:16.8862823+03:00 0HNBSQOFLLPRK:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:12:46.5487437+03:00 0HNBSQOFLLPRL:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:12:46.5731182+03:00 0HNBSQOFLLPRL:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:14:10.1672731+03:00 0HNBSQOFLLPRL:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:14:10.3058640+03:00 0HNBSQOFLLPRL:00000005 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:15:40.2680586+03:00 0HNBSQOFLLPRL:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:15:40.3044312+03:00 0HNBSQOFLLPRL:00000007 [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:16:00.2572759+03:00 0HNBSQOFLLPRL:00000009 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:16:00.2907340+03:00 0HNBSQOFLLPRL:00000009 [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:16:09.1434491+03:00 0HNBSQOFLLPRL:0000000B [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:16:09.1752487+03:00 0HNBSQOFLLPRL:0000000B [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:22:31.2973124+03:00 0HNBSQOFLLPRM:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:22:31.4353872+03:00 0HNBSQOFLLPRM:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:22:53.3301568+03:00 0HNBSQOFLLPRN:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:22:53.3536357+03:00 0HNBSQOFLLPRN:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:24:37.9141336+03:00 0HNBSQOFLLPRO:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:24:37.9415160+03:00 0HNBSQOFLLPRO:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:24:40.5649850+03:00 0HNBSQOFLLPRO:00000004 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:24:40.5884415+03:00 0HNBSQOFLLPRO:00000004 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:25:26.2124165+03:00 0HNBSQOFLLPRP:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:25:26.2335906+03:00 0HNBSQOFLLPRP:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:26:10.1797453+03:00 0HNBSQOFLLPRQ:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:26:10.2073167+03:00 0HNBSQOFLLPRQ:00000003 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:26:54.8140530+03:00 0HNBSQOFLLPRR:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:26:54.8411852+03:00 0HNBSQOFLLPRR:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:27:19.1890281+03:00 0HNBSQOFLLPRS:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:27:19.2154323+03:00 0HNBSQOFLLPRS:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:27:41.1313432+03:00 0HNBSQOFLLPRT:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:27:41.2819596+03:00 0HNBSQOFLLPRT:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:28:09.6980397+03:00 0HNBSQOFLLPRU:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:28:09.7216144+03:00 0HNBSQOFLLPRU:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:28:44.5053185+03:00 0HNBSQOFLLPRV:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:28:44.5309000+03:00 0HNBSQOFLLPRV:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:29:19.4062776+03:00 0HNBSQOFLLPS0:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:29:19.4323576+03:00 0HNBSQOFLLPS0:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:29:31.9810355+03:00 0HNBSQOFLLPS1:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:29:32.0057693+03:00 0HNBSQOFLLPS1:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:29:48.3335549+03:00 0HNBSQOFLLPS2:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:29:48.3568237+03:00 0HNBSQOFLLPS2:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:31:29.8421027+03:00 0HNBSQOFLLPS3:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:31:29.8706684+03:00 0HNBSQOFLLPS3:00000003 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:33:17.9374882+03:00 0HNBSQOFLLPS4:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:33:18.2551786+03:00 0HNBSQOFLLPS4:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:33:56.3645871+03:00 0HNBSQOFLLPS5:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:33:56.3893166+03:00 0HNBSQOFLLPS5:00000003 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:34:07.2157470+03:00 0HNBSQOFLLPS5:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:34:07.2465746+03:00 0HNBSQOFLLPS5:00000005 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:34:34.3044765+03:00 0HNBSQOFLLPS5:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:34:34.3291484+03:00 0HNBSQOFLLPS5:00000007 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:34:44.3225654+03:00 0HNBSQOFLLPS5:00000009 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:34:44.3463157+03:00 0HNBSQOFLLPS5:00000009 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:35:39.4536850+03:00 0HNBSQOFLLPS5:0000000B [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:35:39.4856393+03:00 0HNBSQOFLLPS5:0000000B [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:36:21.5649847+03:00 0HNBSQOFLLPS5:0000000D [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:36:21.5997310+03:00 0HNBSQOFLLPS5:0000000D [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:37:07.8368809+03:00 0HNBSQOFLLPS5:0000000F [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:37:07.8617795+03:00 0HNBSQOFLLPS5:0000000F [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T14:38:10.4434819+03:00 0HNBSQOFLLPS5:00000011 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T14:38:10.4691886+03:00 0HNBSQOFLLPS5:00000011 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:08:17.0825903+03:00  [INF] Seeding Databases (1466a039)
+2025-04-16T19:08:23.7581186+03:00  [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:08:27.3205636+03:00  [INF] Executed DbCommand ("326"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-16T19:08:27.5216097+03:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2025-04-16T19:08:27.5653347+03:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2025-04-16T19:08:27.6156355+03:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-04-16T19:08:28.7513487+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetRoles\" AS a)" (0723d8ff)
+2025-04-16T19:08:28.7819286+03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"AspNetUsers\" AS a)" (0723d8ff)
+2025-04-16T19:08:28.8131196+03:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblBaners\" AS t)" (0723d8ff)
+2025-04-16T19:08:28.8443213+03:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblRunLine\" AS t)" (0723d8ff)
+2025-04-16T19:08:28.8675092+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblSex\" AS t)" (0723d8ff)
+2025-04-16T19:08:28.8866439+03:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblShowId\" AS t)" (0723d8ff)
+2025-04-16T19:08:28.9075153+03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblDogClases\" AS t)" (0723d8ff)
+2025-04-16T19:08:28.9354568+03:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1
+    FROM \"tblValidateShow\" AS t)" (0723d8ff)
+2025-04-16T19:08:29.5709860+03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-04-16T19:08:29.5711835+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-16T19:08:29.5712896+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-16T19:08:29.5713522+03:00  [INF] Content root path: "D:\ksu\WebKsu\WebKsu\" (b5d60022)
+2025-04-16T19:12:32.3784120+03:00 0HNBT03MRPQP2:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:12:32.7207282+03:00 0HNBT03MRPQP2:00000003 [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-16T19:12:49.4385917+03:00 0HNBT03MRPQP4:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:12:49.6761260+03:00 0HNBT03MRPQP4:00000003 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:12:49.7096080+03:00 0HNBT03MRPQP3:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:12:49.9000580+03:00 0HNBT03MRPQP3:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T19:14:28.9231322+03:00 0HNBT03MRPQP5:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:14:28.9498709+03:00 0HNBT03MRPQP5:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:16:19.9596033+03:00 0HNBT03MRPQP6:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:16:19.9812705+03:00 0HNBT03MRPQP6:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:17:11.3818530+03:00 0HNBT03MRPQP8:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:17:11.4041644+03:00 0HNBT03MRPQP8:00000002 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:20:24.6316037+03:00 0HNBT03MRPQP9:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:20:24.7803001+03:00 0HNBT03MRPQP9:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:23:30.9947707+03:00 0HNBT03MRPQPA:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:23:31.0193263+03:00 0HNBT03MRPQPA:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:34:52.7901059+03:00 0HNBT03MRPQPB:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:34:52.9660957+03:00 0HNBT03MRPQPB:00000003 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:35:32.3792984+03:00 0HNBT03MRPQPC:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:35:32.4023394+03:00 0HNBT03MRPQPC:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:36:13.0765641+03:00 0HNBT03MRPQPD:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:13.0985241+03:00 0HNBT03MRPQPD:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T19:36:15.2313768+03:00 0HNBT03MRPQPD:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:15.2544850+03:00 0HNBT03MRPQPD:00000005 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-16T19:36:16.7829294+03:00 0HNBT03MRPQPH:00000002 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:16.8032654+03:00 0HNBT03MRPQPH:00000002 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T19:36:31.6654020+03:00 0HNBT03MRPQPL:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:31.6990480+03:00 0HNBT03MRPQPL:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"Address\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"Owner\", a.\"PasswordHash\", a.\"Phone\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a" (0723d8ff)
+2025-04-16T19:36:34.5373639+03:00 0HNBT03MRPQPM:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:34.5612679+03:00 0HNBT03MRPQPM:00000003 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:36:40.7158767+03:00 0HNBT03MRPQPM:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:40.7372799+03:00 0HNBT03MRPQPM:00000005 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-16T19:36:48.6198928+03:00 0HNBT03MRPQPN:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:48.6385701+03:00 0HNBT03MRPQPN:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T19:36:56.6697119+03:00 0HNBT03MRPQPR:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:36:56.6892140+03:00 0HNBT03MRPQPR:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-16T19:37:00.0759498+03:00 0HNBT03MRPQPR:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:37:00.0964852+03:00 0HNBT03MRPQPR:00000005 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T19:37:29.9501874+03:00 0HNBT03MRPQPV:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:37:29.9705513+03:00 0HNBT03MRPQPV:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T19:38:05.7895344+03:00 0HNBT03MRPQQ3:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:38:05.8384685+03:00 0HNBT03MRPQQ3:00000003 [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"Address\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"Owner\", a.\"PasswordHash\", a.\"Phone\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a" (0723d8ff)
+2025-04-16T19:38:10.1621805+03:00 0HNBT03MRPQQ3:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:38:10.1814061+03:00 0HNBT03MRPQQ3:00000005 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\"
+FROM \"tblRunLine\" AS t" (0723d8ff)
+2025-04-16T19:38:11.6398887+03:00 0HNBT03MRPQQ4:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:38:11.6603164+03:00 0HNBT03MRPQQ4:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"DateCreated\", t.\"Description\", t.\"IsDeleted\", t.\"Name\", t.\"StartPhoto\"
+FROM \"tblBaners\" AS t
+ORDER BY t.\"DateCreated\" DESC" (0723d8ff)
+2025-04-16T19:50:35.5008646+03:00 0HNBT03MRPQQ8:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:50:35.8067145+03:00 0HNBT03MRPQQ8:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T19:58:22.2846936+03:00 0HNBT03MRPQQD:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T19:58:22.4203286+03:00 0HNBT03MRPQQD:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T20:00:36.3117583+03:00 0HNBT03MRPQQE:00000003 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T20:00:36.3344550+03:00 0HNBT03MRPQQE:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T20:01:35.2139342+03:00 0HNBT03MRPQQE:00000005 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T20:01:35.2382705+03:00 0HNBT03MRPQQE:00000005 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T20:03:22.9157494+03:00 0HNBT03MRPQQE:00000007 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T20:03:23.1990064+03:00 0HNBT03MRPQQE:00000007 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T20:03:48.8701193+03:00 0HNBT03MRPQQE:00000009 [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T20:03:48.8939882+03:00 0HNBT03MRPQQE:00000009 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T20:05:40.0672311+03:00 0HNBT03MRPQQE:0000000B [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T20:05:40.0904758+03:00 0HNBT03MRPQQE:0000000B [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T20:06:36.5264841+03:00 0HNBT03MRPQQE:0000000D [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T20:06:36.5539256+03:00 0HNBT03MRPQQE:0000000D [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)
+2025-04-16T20:07:50.7858110+03:00 0HNBT03MRPQQE:0000000F [INF] Entity Framework Core "6.0.3" initialized '"AppEFContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f"' with options: "None" (d2805559)
+2025-04-16T20:07:50.8150984+03:00 0HNBT03MRPQQE:0000000F [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"Adress\", t.\"Breed\", t.\"Breeder\", t.\"Chip\", t.\"ClassId\", t.\"Color\", t.\"Date\", t.\"DateCreated\", t.\"Email\", t.\"Father\", t.\"IsDeleted\", t.\"Mather\", t.\"NameDog\", t.\"Owner\", t.\"Pedigree\", t.\"Phone\", t.\"SexId\", t.\"ShowId\", t.\"StartPhoto1\", t.\"StartPhoto2\", t.\"StartPhoto3\", t.\"StartPhoto4\", t.\"StartPhoto5\", t.\"StartPhoto6\", t.\"ValidateShowId\", t0.\"Id\", t0.\"Name\", t1.\"Id\", t1.\"Name\", t2.\"Id\", t2.\"Name\", t3.\"Id\", t3.\"Name\"
+FROM \"tblShow\" AS t
+INNER JOIN \"tblDogClases\" AS t0 ON t.\"ClassId\" = t0.\"Id\"
+INNER JOIN \"tblShowId\" AS t1 ON t.\"ShowId\" = t1.\"Id\"
+INNER JOIN \"tblSex\" AS t2 ON t.\"SexId\" = t2.\"Id\"
+LEFT JOIN \"tblValidateShow\" AS t3 ON t.\"ValidateShowId\" = t3.\"Id\"" (0723d8ff)

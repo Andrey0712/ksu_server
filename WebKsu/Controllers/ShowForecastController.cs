@@ -231,7 +231,7 @@ namespace WebKsu.Controllers
 
                     string dirPath = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
                     startFoto6 = Path.Combine(dirPath, randomFilename);
-                    using (var file = System.IO.File.Create(startFoto5))
+                    using (var file = System.IO.File.Create(startFoto6))
                     {
                         model.StartPhoto6.CopyTo(file);
                     }
@@ -262,14 +262,14 @@ namespace WebKsu.Controllers
             }
         }
         /// <summary>
-        ///Зміна статусу замовленя
+        ///Зміна статусу заявки
         /// </summary>
         /// <param name="model">Понель із даними</param>
         /// <returns>Повертає ok</returns>
         /// <remarks>Awesomeness!</remarks>
-        /// <response code="200">Change order</response>
-        /// <response code="400">Change order has missing/invalid values</response>
-        /// <response code="500">Oops! Can't Change order right now</response>
+        /// <response code="200">Change ok</response>
+        /// <response code="400">Change has missing/invalid values</response>
+        /// <response code="500">Oops! Can't Change right now</response>
 
         [HttpPost]
         [Route("changeStatus")]
@@ -329,6 +329,76 @@ namespace WebKsu.Controllers
 
         }
 
+        /// <summary>
+        /// Видалення заявки
+        /// </summary>
+        /// <param name="id">Понель із даними</param>
+        /// <returns>Повертає повідомлення</returns>
+        /// <remarks>Awesomeness!</remarks>
+        /// <response code="200">Delete </response>
+        /// <response code="400">Delete has missing/invalid values</response>
+        /// <response code="500">Oops! Can't delete now</response>
+
+        [HttpPost]
+        [Route("delete")]
+        //public IActionResult Delete([FromBody] ProductItemViewModel model)
+        public IActionResult Delete([FromBody] int id)
+
+        {
+            string dirPath = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
+            var res = _context.Shows.FirstOrDefault(x => x.Id == id);
+            if (res == null)
+            {
+                return BadRequest(new { message = "Check id!" });
+            }
+
+            var oldImage1 = res.StartPhoto1;
+            string fol = "\\uploads\\";
+            string contentRootPath1 = _host.ContentRootPath + fol + oldImage1;
+
+            if (System.IO.File.Exists(contentRootPath1))
+            {
+                System.IO.File.Delete(contentRootPath1);
+            }
+            var oldImage2 = res.StartPhoto2;
+            string contentRootPath2 = _host.ContentRootPath + fol + oldImage2;
+
+            if (System.IO.File.Exists(contentRootPath2))
+            {
+                System.IO.File.Delete(contentRootPath2);
+            }
+            var oldImage3 = res.StartPhoto3;
+               string contentRootPath3 = _host.ContentRootPath + fol + oldImage3;
+
+            if (System.IO.File.Exists(contentRootPath3))
+            {
+                System.IO.File.Delete(contentRootPath3);
+            }
+            var oldImage4 = res.StartPhoto4;
+                        string contentRootPath4 = _host.ContentRootPath + fol + oldImage4;
+
+            if (System.IO.File.Exists(contentRootPath4))
+            {
+                System.IO.File.Delete(contentRootPath4);
+            }
+            var oldImage5 = res.StartPhoto5;
+                        string contentRootPath5 = _host.ContentRootPath + fol + oldImage5;
+
+            if (System.IO.File.Exists(contentRootPath5))
+            {
+                System.IO.File.Delete(contentRootPath5);
+            }
+            var oldImage6 = res.StartPhoto6;
+                       string contentRootPath6 = _host.ContentRootPath + fol + oldImage6;
+
+            if (System.IO.File.Exists(contentRootPath6))
+            {
+                System.IO.File.Delete(contentRootPath6);
+            }
+            _context.Shows.Remove(res);
+            _context.SaveChanges();
+            return Ok(new { message = "Product deleted" });
+        }
 
 
 
