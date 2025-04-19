@@ -96,6 +96,29 @@ namespace WebKsu.Model
         public int StatusId { get; set; }
     }
 
+    public class ShowViewModel
+    {
+        public int Id { get; set; }
+        /*public string ShowIdEntity { get; set; }*/
+        public string ClassIdEntity { get; set; }
+        public string SexEntity { get; set; }
+
+        public string Breed { get; set; }
+        public string NameDog { get; set; }
+        public string Color { get; set; }
+        public string Pedigree { get; set; }
+        public string Chip { get; set; }
+        public string Father { get; set; }
+        public string Mather { get; set; }
+        public string Date { get; set; }
+        public string Owner { get; set; }
+        public string Breeder { get; set; }
+        public string Adress { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+
+       
+    }
 
 
 }

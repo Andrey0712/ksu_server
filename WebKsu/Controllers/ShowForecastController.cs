@@ -67,37 +67,73 @@ namespace WebKsu.Controllers
                 });
             }
         }
+        /// <summary>
+        /// Список заявок cac
+        /// </summary>
+        /// <returns>Повертає лист</returns>
+        /// <remarks>Awesomeness!</remarks>
+        /// <response code="200">List show</response>
+        /// <response code="400">List show has missing/invalid values</response>
+        /// <response code="500">Oops! Can't get  show list right now</response>
+        [HttpGet]
+        [Route("lisShowCact")]
+        public async Task<IActionResult> lisShowCact()
+        {
+            try
+            {
+                //Thread.Sleep(2000);
+                var model = await _context.Shows
+                     .Include(x => x.ClassIdEntity)
+                     .Include(x => x.ShowIdEntity)
+                     .Include(x => x.SexEntity)
+                     .Include(x => x.ValidateShowEntity)
+                     .Where(x=>x.ShowId==1)
+                    .Select(x => _mapper.Map<ShowViewModel>(x)).ToListAsync();
+                return Ok(model);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    invalid = ex.Message
+                });
+            }
+        }
+        /// <summary>
+        /// Список заявок cac
+        /// </summary>
+        /// <returns>Повертає лист</returns>
+        /// <remarks>Awesomeness!</remarks>
+        /// <response code="200">List show</response>
+        /// <response code="400">List show has missing/invalid values</response>
+        /// <response code="500">Oops! Can't get  show list right now</response>
+        [HttpGet]
+        [Route("lisShowCacib")]
+        public async Task<IActionResult> lisShowCacib()
+        {
+            try
+            {
+                //Thread.Sleep(2000);
+                var model = await _context.Shows
+                     .Include(x => x.ClassIdEntity)
+                     .Include(x => x.ShowIdEntity)
+                     .Include(x => x.SexEntity)
+                     .Include(x => x.ValidateShowEntity)
+                     .Where(x => x.ShowId == 2)
+                    .Select(x => _mapper.Map<ShowViewModel>(x)).ToListAsync();
+                return Ok(model);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    invalid = ex.Message
+                });
+            }
+        }
 
 
 
-        /* /// <summary>
-         /// Видалення
-         /// </summary>
-         /// <param name="id">Понель із даними</param>
-         /// <returns>Повертає повідомлення</returns>
-         /// <remarks>Awesomeness!</remarks>
-         /// <response code="200">Delete run lines</response>
-         /// <response code="400">Delete run lines has missing/invalid values</response>
-         /// <response code="500">Oops! Can't delete run lines now</response>
-
-         [HttpPost]
-         [Route("deleteRunlines")]
-         *//*[Authorize(Roles = Roles.Admin)]*//*
-         //public IActionResult Delete([FromBody] ProductItemViewModel model)
-         public IActionResult Delete([FromBody] int id)
-
-         {
-
-             var res = _context.RunLine.FirstOrDefault(x => x.Id == id);
-             if (res == null)
-             {
-                 return BadRequest(new { message = "Check id!" });
-             }
-
-             _context.RunLine.Remove(res);
-             _context.SaveChanges();
-             return Ok(new { message = "Runlines deleted" });
-         }*/
 
         /// <summary>
         /// Додати заявку

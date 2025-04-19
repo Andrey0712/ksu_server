@@ -156,6 +156,25 @@ namespace WebKsu.Mapper
                          .ForMember(x => x.DateCreate, opt => opt.MapFrom(x => x.DateCreated.ToString("dd.MM.yyyy")))
             .ForMember(x => x.ValidateShowEntity, opt => opt.MapFrom(x => x.ValidateShowEntity.Name));
 
+            CreateMap<ShowEntity, ShowViewModel>()
+             /* .ForMember(x => x.ShowIdEntity, opt => opt.MapFrom(x => x.ShowIdEntity.Name))*/
+              .ForMember(x => x.ClassIdEntity, opt => opt.MapFrom(x => x.ClassIdEntity.Name))
+              .ForMember(x => x.SexEntity, opt => opt.MapFrom(x => x.SexEntity.Name))
+              .ForMember(x => x.Breed, opt => opt.MapFrom(x => x.Breed))
+               .ForMember(x => x.NameDog, opt => opt.MapFrom(x => x.NameDog))
+                .ForMember(x => x.Color, opt => opt.MapFrom(x => x.Color))
+                 .ForMember(x => x.Pedigree, opt => opt.MapFrom(x => x.Pedigree))
+                  .ForMember(x => x.Chip, opt => opt.MapFrom(x => x.Chip))
+                   .ForMember(x => x.Father, opt => opt.MapFrom(x => x.Father))
+                    .ForMember(x => x.Mather, opt => opt.MapFrom(x => x.Mather))
+                     .ForMember(x => x.Date, opt => opt.MapFrom(x => x.Date.ToString("dd.MM.yyyy")))
+                      .ForMember(x => x.Owner, opt => opt.MapFrom(x => x.Owner))
+                       .ForMember(x => x.Breeder, opt => opt.MapFrom(x => x.Breeder))
+                        .ForMember(x => x.Adress, opt => opt.MapFrom(x => x.Adress))
+                         .ForMember(x => x.Phone, opt => opt.MapFrom(x => x.Phone))
+                        .ForMember(x => x.Email, opt => opt.MapFrom(x => x.Email));
+                        
+
 
             /* CreateMap<CartAddViewModel, CartEntity>();
 
