@@ -348,26 +348,206 @@ namespace WebKsu.Controllers
         /// <response code="500">Oops! Can't edit show now</response>
 
         [HttpPost]
-        [Route("editRunLine")]
+        [Route("editShow")]
        /* [Authorize(Roles = Roles.Admin)]*/
-        public IActionResult Edit([FromForm] RunLineToEdit model)
+        public IActionResult EditShow([FromForm] ShowEditViewModel model)
         {
 
 
             if (ModelState.IsValid)
             {
-                var itemProd = _context.RunLine
+                var item = _context.Shows
                              .FirstOrDefault(x => x.Id == model.Id);
-                
-                itemProd.Id = model.Id;
-               
-                if (model.Description != null)
+                string dirPath = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
+                string fol = "\\uploads\\";
+
+                item.Id = model.Id;
+                if (model.Adress != null)
                 {
-                    itemProd.Description = model.Description;
+                    item.Adress = model.Adress;
                 }
-                                
+                if (model.Breed != null)
+                {
+                    item.Breed = model.Breed;
+                }
+                if (model.NameDog != null)
+                {
+                    item.NameDog = model.NameDog;
+                }
+                if (model.Color != null)
+                {
+                    item.Color = model.Color;
+                }
+                if (model.Pedigree != null)
+                {
+                    item.Pedigree = model.Pedigree;
+                }
+                if (model.Chip != null)
+                {
+                    item.Chip = model.Chip;
+                }
+                if (model.Father != null)
+                {
+                    item.Father = model.Father;
+                }
+                if (model.Mather != null)
+                {
+                    item.Mather = model.Mather;
+                }
+                if (model.Owner != null)
+                {
+                    item.Owner = model.Owner;
+                }
+                if (model.Breeder != null)
+                {
+                    item.Breeder = model.Breeder;
+                }
+                if (model.Phone != null)
+                {
+                    item.Phone = model.Phone;
+                }
+                if (model.Email != null)
+                {
+                    item.Email = model.Email;
+                }
+                if (model.StartPhoto1 != null)
+                {
+                    var oldImage = item.StartPhoto1;
+
+                    string randomFilename = Path.GetRandomFileName() +
+                        Path.GetExtension(model.StartPhoto1.FileName);
+
+                    var startFoto = Path.Combine(dirPath, randomFilename);
+                    using (var file = System.IO.File.Create(startFoto))
+                    {
+                        model.StartPhoto1.CopyTo(file);
+                    }
+
+                   
+                    string contentRootPath = _host.ContentRootPath + fol + oldImage;
+
+                    if (System.IO.File.Exists(contentRootPath))
+                    {
+                        System.IO.File.Delete(contentRootPath);
+                    }
+                    item.StartPhoto1 = randomFilename;
+                }
+                if (model.StartPhoto2 != null)
+                {
+                    var oldImage = item.StartPhoto2;
+
+                    string randomFilename = Path.GetRandomFileName() +
+                        Path.GetExtension(model.StartPhoto2.FileName);
+
+                    var startFoto = Path.Combine(dirPath, randomFilename);
+                    using (var file = System.IO.File.Create(startFoto))
+                    {
+                        model.StartPhoto2.CopyTo(file);
+                    }
+
+                   
+                    string contentRootPath = _host.ContentRootPath + fol + oldImage;
+
+                    if (System.IO.File.Exists(contentRootPath))
+                    {
+                        System.IO.File.Delete(contentRootPath);
+                    }
+                    item.StartPhoto2 = randomFilename;
+                }
+                if (model.StartPhoto3 != null)
+                {
+                    var oldImage = item.StartPhoto3;
+
+                    string randomFilename = Path.GetRandomFileName() +
+                        Path.GetExtension(model.StartPhoto3.FileName);
+
+                    var startFoto = Path.Combine(dirPath, randomFilename);
+                    using (var file = System.IO.File.Create(startFoto))
+                    {
+                        model.StartPhoto3.CopyTo(file);
+                    }
+
+                   
+                    string contentRootPath = _host.ContentRootPath + fol + oldImage;
+
+                    if (System.IO.File.Exists(contentRootPath))
+                    {
+                        System.IO.File.Delete(contentRootPath);
+                    }
+                    item.StartPhoto3 = randomFilename;
+                }
+                if (model.StartPhoto4 != null)
+                {
+                    var oldImage = item.StartPhoto4;
+
+                    string randomFilename = Path.GetRandomFileName() +
+                        Path.GetExtension(model.StartPhoto4.FileName);
+
+                    var startFoto = Path.Combine(dirPath, randomFilename);
+                    using (var file = System.IO.File.Create(startFoto))
+                    {
+                        model.StartPhoto4.CopyTo(file);
+                    }
+
+                    
+                    string contentRootPath = _host.ContentRootPath + fol + oldImage;
+
+                    if (System.IO.File.Exists(contentRootPath))
+                    {
+                        System.IO.File.Delete(contentRootPath);
+                    }
+                    item.StartPhoto4 = randomFilename;
+                }
+                if (model.StartPhoto5 != null)
+                {
+                    var oldImage = item.StartPhoto5;
+
+                    string randomFilename = Path.GetRandomFileName() +
+                        Path.GetExtension(model.StartPhoto5.FileName);
+
+                    var startFoto = Path.Combine(dirPath, randomFilename);
+                    using (var file = System.IO.File.Create(startFoto))
+                    {
+                        model.StartPhoto5.CopyTo(file);
+                    }
+
+                   
+                    string contentRootPath = _host.ContentRootPath + fol + oldImage;
+
+                    if (System.IO.File.Exists(contentRootPath))
+                    {
+                        System.IO.File.Delete(contentRootPath);
+                    }
+                    item.StartPhoto5 = randomFilename;
+                }
+                if (model.StartPhoto6 != null)
+                {
+                    var oldImage = item.StartPhoto6;
+
+                    string randomFilename = Path.GetRandomFileName() +
+                        Path.GetExtension(model.StartPhoto6.FileName);
+
+                    var startFoto = Path.Combine(dirPath, randomFilename);
+                    using (var file = System.IO.File.Create(startFoto))
+                    {
+                        model.StartPhoto6.CopyTo(file);
+                    }
+
+                   
+                    string contentRootPath = _host.ContentRootPath + fol + oldImage;
+
+                    if (System.IO.File.Exists(contentRootPath))
+                    {
+                        System.IO.File.Delete(contentRootPath);
+                    }
+                    item.StartPhoto6 = randomFilename;
+                }
+
+
+
                 _context.SaveChanges();
-                            }
+
+            }
 
             return Ok(new { message = "ok edit" });
 

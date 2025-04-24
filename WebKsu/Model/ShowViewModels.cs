@@ -119,6 +119,41 @@ namespace WebKsu.Model
 
        
     }
+    public class ShowEditViewModel
+    {
+        public int Id { get; set; }
+        /*public string ShowIdEntity { get; set; }*/
+        //public string ClassIdEntity { get; set; }
+        //public string SexEntity { get; set; }
+
+        public string? Breed { get; set; }
+        public string? NameDog { get; set; }
+        public string? Color { get; set; }
+        public string? Pedigree { get; set; }
+        public string? Chip { get; set; }
+        public string? Father { get; set; }
+        public string? Mather { get; set; }
+        public string? Date { get; set; }
+        public string? Owner { get; set; }
+        public string? Breeder { get; set; }
+        public string? Adress { get; set; }
+        public string? Phone { get; set; }
+        public string? Email { get; set; }
+        [Display(Name = "Фотографія1")]
+        public IFormFile? StartPhoto1 { get; set; }
+        [Display(Name = "Фотографія2")]
+        public IFormFile? StartPhoto2 { get; set; }
+        [Display(Name = "Фотографія3")]
+        public IFormFile? StartPhoto3 { get; set; }
+        [Display(Name = "Фотографія4")]
+        public IFormFile? StartPhoto4 { get; set; }
+        [Display(Name = "Фотографія5")]
+        public IFormFile? StartPhoto5 { get; set; }
+        [Display(Name = "Фотографія6")]
+        public IFormFile? StartPhoto6 { get; set; }
+
+
+    }
 
 
 }

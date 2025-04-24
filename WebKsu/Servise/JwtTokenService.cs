@@ -36,7 +36,7 @@ namespace WebKsu.Servise
                 new Claim("email", user.Email),
             new Claim("owner", user.Owner),
             new Claim("address", user.Address),
-            //new Claim("phone", user.PhoneNumber)
+            new Claim("phone", user.Phone)
 
         };
 
