@@ -91,6 +91,7 @@ namespace WebKsu.Controllers
         {
             //Thread.Sleep(2000);
             var list = await _context.Users
+                 
                 .Select(x => _mapper.Map<UserItemViewModel>(x))
                 .AsQueryable().ToListAsync();
 
@@ -165,11 +166,11 @@ namespace WebKsu.Controllers
         /// <response code="500">Oops! Can't edit user now</response>
         /// 
 
-        [Authorize(Roles = Roles.User)]
-        //[Authorize]
+        //[Authorize(Roles = Roles.User)]
+        [Authorize]
         [HttpPost]
-        [Route("edit")]
-        public async Task<IActionResult> EditUser([FromForm] UserEditViewModel model)
+        [Route("editProfile")]
+        public async Task<IActionResult> EditProfile([FromForm] UserEditViewModel model)
 
         {
             try

@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using static WebKsu.Model.RunLineViewModel;
 using WebKsu.Model;
 using System;
+using System.Linq;
 
 namespace WebKsu.Controllers
 {
@@ -88,10 +89,14 @@ namespace WebKsu.Controllers
                      .Include(x => x.SexEntity)
                      .Include(x => x.ValidateShowEntity)
                      .Where(x=>x.ShowId==1)
-                     .OrderBy(x => x.Breed)
-                     .ThenBy(x => x.ClassId)
+                     /*.OrderByDescending(x => x.Breed.ToLower())
+                      .ThenByDescending(x => x.ClassId)
+                     .ThenByDescending(x => x.SexId)
+                     .ThenByDescending(x => x.NameDog.ToLower())*/
+                     .OrderBy(x => x.Breed.ToLower())
+                      .ThenBy(x => x.ClassId)
                      .ThenBy(x => x.SexId)
-                     .ThenBy(x => x.NameDog)
+                     .ThenBy(x => x.NameDog.ToLower())
                     .Select(x => _mapper.Map<ShowViewModel>(x)).ToListAsync();
                 return Ok(model);
             }

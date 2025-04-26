@@ -22,12 +22,13 @@ namespace WebKsu.Mapper
                 .ForMember(x => x.Address, opt => opt.MapFrom(opt => opt.Address))
                 .ForMember(x => x.Email, opt => opt.MapFrom(opt => opt.Email))
                 .ForMember(x => x.Phone, opt => opt.MapFrom(opt => opt.Phone));
-               
+
 
             //мепер для вівода юзера
             CreateMap<AppUser, UserItemViewModel>()
                 .ForMember(x => x.Owner, opt => opt.MapFrom(opt => opt.Owner))
                 .ForMember(x => x.Email, opt => opt.MapFrom(opt => opt.Email));
+               
 
 
             CreateMap<UserEditViewModel, AppUser>()

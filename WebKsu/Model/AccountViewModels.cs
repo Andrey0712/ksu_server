@@ -56,6 +56,7 @@
         public string? Owner { get; set; }
         public string? Address { get; set; }
         public string? Phone { get; set; }
+       
     }
 
     public class UserItemViewModel
@@ -65,6 +66,7 @@
         public string Owner { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
+       
     }
     //тип для токена в контролер логин Example Value Schema в документацию свагера
 
