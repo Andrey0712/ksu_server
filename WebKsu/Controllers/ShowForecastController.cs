@@ -129,10 +129,10 @@ namespace WebKsu.Controllers
                      .Include(x => x.SexEntity)
                      .Include(x => x.ValidateShowEntity)
                      .Where(x => x.ShowId == 2)
-                     .OrderBy(x=>x.Breed)
-                     .ThenBy(x=>x.ClassIdEntity.Id)
-                     .ThenBy(x=>x.SexEntity.Id)
-                     .ThenBy(x=>x.NameDog)
+                     .OrderBy(x => x.Breed.ToLower())
+                      .ThenBy(x => x.ClassId)
+                     .ThenBy(x => x.SexId)
+                     .ThenBy(x => x.NameDog.ToLower())
                     .Select(x => _mapper.Map<ShowViewModel>(x)).ToListAsync();
                 return Ok(model);
             }
